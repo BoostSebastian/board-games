@@ -117,7 +117,6 @@ function statsFor(g) {
 
 function card(g, i, pick) {
   return `<button class="card${pick ? ' pick' : ''}" type="button" data-i="${i}">
-    ${g.image ? `<img class="thumb" src="${esc(g.image)}" alt="" loading="lazy">` : ''}
     <span class="body">
       <span class="head">
         <span class="name">${pick ? '🎲 ' : ''}${esc(g.name)}${g.year ? ` <span class="year">${g.year}</span>` : ''}</span>
@@ -142,26 +141,12 @@ function textOn(hex) {
 }
 
 function spine(g, i, pick) {
-  // Riktig rygg fotograferad från hyllan.
-  if (g.spine) {
-    const front = g.spineFace === 'front';
-    // Lådor som står med framsidan utåt visas lägre och bredare, som i en riktig hylla.
-    let h = front ? 150 : Math.min(190, Math.round(150 + Math.min(g.weight ?? 2, 4.5) * 9));
-    let width = Math.round(h * (g.spineRatio || 0.25));
-    const maxW = front ? 170 : 92;
-    if (width > maxW) { width = maxW; h = Math.round(width / (g.spineRatio || 1)); }
-    width = Math.max(width, 20);
-    return `<button class="spine photo${front ? ' front' : ''}${pick ? ' pick' : ''}${g.coop ? ' coop' : ''}" type="button" data-i="${i}"
-        style="--h:${h}px;height:${h}px;width:${width}px" title="${esc(g.name)}" aria-label="${esc(g.name)}">
-      <img src="${esc(g.spine)}" alt="" loading="lazy">
-    </button>`;
-  }
-  // Annars en ritad rygg. Tyngre spel får tjockare och högre ryggar.
+  // Tyngre spel får tjockare och högre ryggar, så hyllan ser levande ut.
   const w = Math.min(g.weight ?? 2, 4.5);
   const h = Math.min(190, Math.round(116 + w * 13 + (hash(g.name) % 16)));
   const width = Math.round(26 + w * 6 + (g.type === 'expansion' ? -6 : 0));
   const bg = spineColor(g);
-  const img = g.image ? `<img src="${esc(g.image)}" alt="" loading="lazy">` : '';
+  const img = '';
   return `<button class="spine${pick ? ' pick' : ''}${g.coop ? ' coop' : ''}" type="button" data-i="${i}"
       style="--h:${h}px;height:${h}px;width:${width}px;background:${bg};color:${textOn(bg)}" title="${esc(g.name)}">
     ${img}<span class="spine-name">${esc(g.name)}</span>
@@ -172,15 +157,42 @@ function spine(g, i, pick) {
 
 function openDetail(g) {
   const d = $('detail');
+  d.dataset.name = g.name;
   $('detailBody').innerHTML = `
-    ${g.image || g.spine ? `<img class="cover" src="${esc(g.image || g.spine)}" alt="Omslag: ${esc(g.name)}">`
-      : `<div class="cover none" style="background:${spineColor(g)};color:${textOn(spineColor(g))}">${esc(g.name)}</div>`}
+    <div class="cover none" id="cover" style="background:${spineColor(g)};color:${textOn(spineColor(g))}">${esc(g.name)}</div>
     <h2>${esc(g.name)}${g.year ? ` <span class="year">${g.year}</span>` : ''}</h2>
     <p class="tags">${tagsFor(g)}</p>
     ${statsFor(g)}
     ${g.note ? `<p class="dnote">${esc(g.note)}</p>` : ''}
     <a class="btn link" href="${bggUrl(g)}" target="_blank" rel="noopener">Öppna på BoardGameGeek ↗</a>`;
   if (typeof d.showModal === 'function') d.showModal(); else d.setAttribute('open', '');
+  loadCover(g);
+}
+
+// Omslaget hämtas från BoardGameGeek först när man öppnar ett spel. Inget sparas i repot.
+const coverCache = new Map();
+async function bggImage(g) {
+  if (g.imageUrl) return g.imageUrl;
+  if (!g.bgg) return null;
+  if (coverCache.has(g.bgg)) return coverCache.get(g.bgg);
+  const p = fetch(`https://api.geekdo.com/api/geekitems?objecttype=thing&objectid=${g.bgg}`)
+    .then((r) => (r.ok ? r.json() : null))
+    .then((j) => j?.item?.images?.previewthumb || j?.item?.imageurl || null)
+    .catch(() => null);
+  coverCache.set(g.bgg, p);
+  return p;
+}
+
+async function loadCover(g) {
+  const url = await bggImage(g);
+  const el = $('cover');
+  if (!url || !el || $('detail').dataset.name !== g.name) return;
+  const img = new Image();
+  img.className = 'cover';
+  img.alt = `Omslag: ${g.name}`;
+  img.referrerPolicy = 'no-referrer';
+  img.onload = () => { if ($('cover') === el) el.replaceWith(img); };
+  img.src = url;
 }
 
 // ---------- Rita ----------

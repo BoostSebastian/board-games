@@ -7,10 +7,7 @@
   "best": "5-8",
   "weight": 1.2,
   "time": 45,
-  "cat": "Kortspel",
-  "spine": "images/spines/6-nimmt-30th-anniversary-edition.jpg",
-  "spineRatio": 0.89,
-  "spineFace": "front"
+  "cat": "Kortspel"
  },
  {
   "name": "7 Wonders",
@@ -21,9 +18,7 @@
   "weight": 2.3,
   "time": 30,
   "cat": "Strategi",
-  "note": "Inplastad",
-  "spine": "images/spines/7-wonders.jpg",
-  "spineRatio": 0.255
+  "note": "Inplastad"
  },
  {
   "name": "7 Wonders Architects",
@@ -33,9 +28,7 @@
   "best": "3-5",
   "weight": 1.3,
   "time": 25,
-  "cat": "Familj",
-  "spine": "images/spines/7-wonders-architects.jpg",
-  "spineRatio": 0.3
+  "cat": "Familj"
  },
  {
   "name": "7 Wonders Duel",
@@ -46,9 +39,7 @@
   "weight": 2.2,
   "time": 30,
   "cat": "Duell",
-  "note": "Med alla expansioner",
-  "spine": "images/spines/7-wonders-duel.jpg",
-  "spineRatio": 0.287
+  "note": "Med alla expansioner"
  },
  {
   "name": "7 Wonders Duel: Pantheon",
@@ -58,9 +49,7 @@
   "best": "2",
   "weight": 2.4,
   "time": 30,
-  "cat": "Duell",
-  "spine": "images/spines/7-wonders-duel-pantheon.jpg",
-  "spineRatio": 0.233
+  "cat": "Duell"
  },
  {
   "name": "A Feast for Odin",
@@ -70,10 +59,7 @@
   "best": "2",
   "weight": 3.9,
   "time": 120,
-  "cat": "Strategi",
-  "spine": "images/spines/a-feast-for-odin.jpg",
-  "spineRatio": 0.535,
-  "spineFace": "front"
+  "cat": "Strategi"
  },
  {
   "name": "A Feast for Odin: The Norwegians",
@@ -83,9 +69,7 @@
   "best": "2",
   "weight": 3.9,
   "time": 120,
-  "cat": "Strategi",
-  "spine": "images/spines/a-feast-for-odin-the-norwegians.jpg",
-  "spineRatio": 0.233
+  "cat": "Strategi"
  },
  {
   "name": "Agent Avenue",
@@ -95,9 +79,7 @@
   "best": "2",
   "weight": 1.5,
   "time": 20,
-  "cat": "Duell",
-  "spine": "images/spines/agent-avenue.jpg",
-  "spineRatio": 0.333
+  "cat": "Duell"
  },
  {
   "name": "Agricola",
@@ -107,9 +89,7 @@
   "best": "3-4",
   "weight": 3.6,
   "time": 120,
-  "cat": "Strategi",
-  "spine": "images/spines/agricola.jpg",
-  "spineRatio": 0.138
+  "cat": "Strategi"
  },
  {
   "name": "AI Space Puzzle",
@@ -121,9 +101,7 @@
   "time": 30,
   "cat": "Kooperativt",
   "bgg": 383064,
-  "coop": true,
-  "spine": "images/spines/ai-space-puzzle.jpg",
-  "spineRatio": 0.225
+  "coop": true
  },
  {
   "name": "Arcs",
@@ -134,9 +112,7 @@
   "weight": 3.4,
   "time": 120,
   "cat": "Strategi",
-  "note": "Med alla expansioner",
-  "spine": "images/spines/arcs.jpg",
-  "spineRatio": 0.297
+  "note": "Med alla expansioner"
  },
  {
   "name": "Arcs: The Blighted Reach",
@@ -147,9 +123,7 @@
   "weight": 3.8,
   "time": 180,
   "cat": "Strategi",
-  "note": "Inplastad",
-  "spine": "images/spines/arcs-the-blighted-reach.jpg",
-  "spineRatio": 0.417
+  "note": "Inplastad"
  },
  {
   "name": "Ark Nova",
@@ -159,10 +133,7 @@
   "best": "2",
   "weight": 3.8,
   "time": 150,
-  "cat": "Strategi",
-  "spine": "images/spines/ark-nova.jpg",
-  "spineRatio": 0.658,
-  "spineFace": "front"
+  "cat": "Strategi"
  },
  {
   "name": "Arkham Horror (brädspel)",
@@ -173,9 +144,7 @@
   "weight": 3.4,
   "time": 180,
   "cat": "Kooperativt",
-  "coop": true,
-  "spine": "images/spines/arkham-horror-bradspel.jpg",
-  "spineRatio": 0.383
+  "coop": true
  },
  {
   "name": "Arkham Horror: The Card Game",
@@ -186,9 +155,7 @@
   "weight": 3.5,
   "time": 120,
   "cat": "Kooperativt",
-  "coop": true,
-  "spine": "images/spines/arkham-horror-the-card-game.jpg",
-  "spineRatio": 0.182
+  "coop": true
  },
  {
   "name": "Azul: Queen's Garden",
@@ -198,9 +165,7 @@
   "best": "2",
   "weight": 2.6,
   "time": 60,
-  "cat": "Abstrakt",
-  "spine": "images/spines/azul-queen-s-garden.jpg",
-  "spineRatio": 0.297
+  "cat": "Abstrakt"
  },
  {
   "name": "Azul: Stained Glass of Sintra",
@@ -210,9 +175,7 @@
   "best": "2-3",
   "weight": 2.0,
   "time": 40,
-  "cat": "Abstrakt",
-  "spine": "images/spines/azul-stained-glass-of-sintra.jpg",
-  "spineRatio": 0.302
+  "cat": "Abstrakt"
  },
  {
   "name": "Azul: Summer Pavilion",
@@ -222,9 +185,7 @@
   "best": "2",
   "weight": 2.2,
   "time": 45,
-  "cat": "Abstrakt",
-  "spine": "images/spines/azul-summer-pavilion.jpg",
-  "spineRatio": 0.29
+  "cat": "Abstrakt"
  },
  {
   "name": "Bagh Chal",
@@ -235,10 +196,7 @@
   "weight": 1.6,
   "time": 20,
   "cat": "Abstrakt",
-  "note": "Nepalesiskt abstrakt spel, tygpåse",
-  "spine": "images/spines/bagh-chal.jpg",
-  "spineRatio": 0.906,
-  "spineFace": "front"
+  "note": "Nepalesiskt abstrakt spel, tygpåse"
  },
  {
   "name": "Bargain Quest",
@@ -248,9 +206,7 @@
   "best": "3-4",
   "weight": 1.8,
   "time": 45,
-  "cat": "Kortspel",
-  "spine": "images/spines/bargain-quest.jpg",
-  "spineRatio": 0.225
+  "cat": "Kortspel"
  },
  {
   "name": "Blokus",
@@ -260,9 +216,7 @@
   "best": "4",
   "weight": 1.6,
   "time": 20,
-  "cat": "Abstrakt",
-  "spine": "images/spines/blokus.jpg",
-  "spineRatio": 0.263
+  "cat": "Abstrakt"
  },
  {
   "name": "Blood on the Clocktower",
@@ -272,9 +226,7 @@
   "best": "10+",
   "weight": 2.9,
   "time": 90,
-  "cat": "Party",
-  "spine": "images/spines/blood-on-the-clocktower.jpg",
-  "spineRatio": 0.16
+  "cat": "Party"
  },
  {
   "name": "Blueprints",
@@ -284,9 +236,7 @@
   "best": "2-4",
   "weight": 1.6,
   "time": 30,
-  "cat": "Familj",
-  "spine": "images/spines/blueprints.jpg",
-  "spineRatio": 0.203
+  "cat": "Familj"
  },
  {
   "name": "Bomb Busters",
@@ -297,9 +247,7 @@
   "weight": 1.8,
   "time": 30,
   "cat": "Kooperativt",
-  "coop": true,
-  "spine": "images/spines/bomb-busters.jpg",
-  "spineRatio": 0.235
+  "coop": true
  },
  {
   "name": "Brass: Birmingham",
@@ -310,10 +258,7 @@
   "weight": 3.9,
   "time": 120,
   "cat": "Strategi",
-  "note": "Inplastad",
-  "spine": "images/spines/brass-birmingham.jpg",
-  "spineRatio": 1.0,
-  "spineFace": "front"
+  "note": "Inplastad"
  },
  {
   "name": "Burgle Bros",
@@ -324,10 +269,7 @@
   "weight": 2.3,
   "time": 60,
   "cat": "Kooperativt",
-  "coop": true,
-  "spine": "images/spines/burgle-bros.jpg",
-  "spineRatio": 0.592,
-  "spineFace": "front"
+  "coop": true
  },
  {
   "name": "Burgle Bros 2",
@@ -338,9 +280,7 @@
   "weight": 2.4,
   "time": 70,
   "cat": "Kooperativt",
-  "coop": true,
-  "spine": "images/spines/burgle-bros-2.jpg",
-  "spineRatio": 0.17
+  "coop": true
  },
  {
   "name": "Bärenpark",
@@ -350,9 +290,7 @@
   "best": "2-3",
   "weight": 1.7,
   "time": 45,
-  "cat": "Familj",
-  "spine": "images/spines/barenpark.jpg",
-  "spineRatio": 0.285
+  "cat": "Familj"
  },
  {
   "name": "Carcassonne",
@@ -362,9 +300,7 @@
   "best": "2-3",
   "weight": 1.9,
   "time": 40,
-  "cat": "Familj",
-  "spine": "images/spines/carcassonne.jpg",
-  "spineRatio": 0.255
+  "cat": "Familj"
  },
  {
   "name": "Cascadia: Landmarks",
@@ -374,9 +310,7 @@
   "best": "2-4",
   "weight": 2.0,
   "time": 45,
-  "cat": "Familj",
-  "spine": "images/spines/cascadia-landmarks.jpg",
-  "spineRatio": 0.328
+  "cat": "Familj"
  },
  {
   "name": "Catan",
@@ -386,9 +320,7 @@
   "best": "4",
   "weight": 2.3,
   "time": 90,
-  "cat": "Familj",
-  "spine": "images/spines/catan.jpg",
-  "spineRatio": 0.275
+  "cat": "Familj"
  },
  {
   "name": "Citadels",
@@ -398,9 +330,7 @@
   "best": "5-6",
   "weight": 2.0,
   "time": 60,
-  "cat": "Kortspel",
-  "spine": "images/spines/citadels.jpg",
-  "spineRatio": 0.258
+  "cat": "Kortspel"
  },
  {
   "name": "Clever 4Ever",
@@ -410,9 +340,7 @@
   "best": "1-2",
   "weight": 2.0,
   "time": 30,
-  "cat": "Roll & write",
-  "spine": "images/spines/clever-4ever.jpg",
-  "spineRatio": 0.39
+  "cat": "Roll & write"
  },
  {
   "name": "Clever Cubed",
@@ -422,9 +350,7 @@
   "best": "1-2",
   "weight": 2.1,
   "time": 30,
-  "cat": "Roll & write",
-  "spine": "images/spines/clever-cubed.jpg",
-  "spineRatio": 0.38
+  "cat": "Roll & write"
  },
  {
   "name": "Codenames",
@@ -434,9 +360,7 @@
   "best": "6-8",
   "weight": 1.3,
   "time": 15,
-  "cat": "Party",
-  "spine": "images/spines/codenames.jpg",
-  "spineRatio": 0.28
+  "cat": "Party"
  },
  {
   "name": "Collect!",
@@ -448,9 +372,7 @@
   "time": 15,
   "cat": "Kortspel",
   "bgg": 453893,
-  "note": "CMON",
-  "spine": "images/spines/collect.jpg",
-  "spineRatio": 0.365
+  "note": "CMON"
  },
  {
   "name": "Concordia",
@@ -460,9 +382,7 @@
   "best": "4",
   "weight": 3.0,
   "time": 100,
-  "cat": "Strategi",
-  "spine": "images/spines/concordia.jpg",
-  "spineRatio": 0.147
+  "cat": "Strategi"
  },
  {
   "name": "Condottiere",
@@ -473,9 +393,7 @@
   "weight": 2.0,
   "time": 45,
   "cat": "Kortspel",
-  "note": "Kinesisk utgåva",
-  "spine": "images/spines/condottiere.jpg",
-  "spineRatio": 0.372
+  "note": "Kinesisk utgåva"
  },
  {
   "name": "Container",
@@ -485,10 +403,7 @@
   "best": "5",
   "weight": 3.0,
   "time": 90,
-  "cat": "Strategi",
-  "spine": "images/spines/container.jpg",
-  "spineRatio": 1.362,
-  "spineFace": "front"
+  "cat": "Strategi"
  },
  {
   "name": "Courtisans",
@@ -498,9 +413,7 @@
   "best": "4",
   "weight": 1.3,
   "time": 30,
-  "cat": "Kortspel",
-  "spine": "images/spines/courtisans.jpg",
-  "spineRatio": 0.405
+  "cat": "Kortspel"
  },
  {
   "name": "Critters at War: Flies, Lies & Supplies",
@@ -511,9 +424,7 @@
   "weight": 1.8,
   "time": 20,
   "cat": "Duell",
-  "bgg": 367807,
-  "spine": "images/spines/critters-at-war-flies-lies-supplies.jpg",
-  "spineRatio": 0.4
+  "bgg": 367807
  },
  {
   "name": "Cubitos",
@@ -524,9 +435,7 @@
   "weight": 2.0,
   "time": 45,
   "cat": "Familj",
-  "note": "Med expansion",
-  "spine": "images/spines/cubitos.jpg",
-  "spineRatio": 0.242
+  "note": "Med expansion"
  },
  {
   "name": "Curious Cargo",
@@ -536,9 +445,7 @@
   "best": "2",
   "weight": 2.5,
   "time": 45,
-  "cat": "Duell",
-  "spine": "images/spines/curious-cargo.jpg",
-  "spineRatio": 0.237
+  "cat": "Duell"
  },
  {
   "name": "Cutthroat Cove",
@@ -548,10 +455,7 @@
   "best": "4-6",
   "weight": 1.5,
   "time": 30,
-  "cat": "Party",
-  "spine": "images/spines/cutthroat-cove.jpg",
-  "spineRatio": 0.83,
-  "spineFace": "front"
+  "cat": "Party"
  },
  {
   "name": "Darwin's Journey (Collector's Edition)",
@@ -561,9 +465,7 @@
   "best": "2-3",
   "weight": 3.9,
   "time": 120,
-  "cat": "Strategi",
-  "spine": "images/spines/darwin-s-journey-collector-s-edition.jpg",
-  "spineRatio": 0.302
+  "cat": "Strategi"
  },
  {
   "name": "Dead of Winter",
@@ -574,9 +476,7 @@
   "weight": 3.2,
   "time": 120,
   "cat": "Kooperativt",
-  "coop": true,
-  "spine": "images/spines/dead-of-winter.jpg",
-  "spineRatio": 0.24
+  "coop": true
  },
  {
   "name": "Dead of Winter: The Long Night",
@@ -587,9 +487,7 @@
   "weight": 3.3,
   "time": 120,
   "cat": "Kooperativt",
-  "coop": true,
-  "spine": "images/spines/dead-of-winter-the-long-night.jpg",
-  "spineRatio": 0.24
+  "coop": true
  },
  {
   "name": "Desperate Oasis",
@@ -600,10 +498,7 @@
   "weight": 1.8,
   "time": 25,
   "cat": "Duell",
-  "bgg": 428904,
-  "spine": "images/spines/desperate-oasis.jpg",
-  "spineRatio": 0.7,
-  "spineFace": "front"
+  "bgg": 428904
  },
  {
   "name": "Dice Miner (Deluxe)",
@@ -613,10 +508,7 @@
   "best": "2-3",
   "weight": 1.7,
   "time": 30,
-  "cat": "Familj",
-  "spine": "images/spines/dice-miner-deluxe.jpg",
-  "spineRatio": 0.544,
-  "spineFace": "front"
+  "cat": "Familj"
  },
  {
   "name": "Die of the Dead",
@@ -627,9 +519,7 @@
   "weight": 1.9,
   "time": 45,
   "cat": "Familj",
-  "bgg": 292363,
-  "spine": "images/spines/die-of-the-dead.jpg",
-  "spineRatio": 0.25
+  "bgg": 292363
  },
  {
   "name": "dnup",
@@ -641,9 +531,7 @@
   "time": 20,
   "cat": "Kortspel",
   "bgg": 432456,
-  "note": "Grön kortlåda",
-  "spine": "images/spines/dnup.jpg",
-  "spineRatio": 0.268
+  "note": "Grön kortlåda"
  },
  {
   "name": "Don't Get Got!",
@@ -653,9 +541,7 @@
   "best": "4-6",
   "weight": 1.2,
   "time": 30,
-  "cat": "Party",
-  "spine": "images/spines/don-t-get-got.jpg",
-  "spineRatio": 0.367
+  "cat": "Party"
  },
  {
   "name": "Doppelt so Clever",
@@ -665,9 +551,7 @@
   "best": "1-2",
   "weight": 2.0,
   "time": 30,
-  "cat": "Roll & write",
-  "spine": "images/spines/doppelt-so-clever.jpg",
-  "spineRatio": 0.39
+  "cat": "Roll & write"
  },
  {
   "name": "Décorum",
@@ -678,9 +562,7 @@
   "weight": 2.1,
   "time": 45,
   "cat": "Kooperativt",
-  "coop": true,
-  "spine": "images/spines/decorum.jpg",
-  "spineRatio": 0.338
+  "coop": true
  },
  {
   "name": "Eldritch Horror",
@@ -691,9 +573,7 @@
   "weight": 3.3,
   "time": 180,
   "cat": "Kooperativt",
-  "coop": true,
-  "spine": "images/spines/eldritch-horror.jpg",
-  "spineRatio": 0.335
+  "coop": true
  },
  {
   "name": "Everdell",
@@ -703,9 +583,7 @@
   "best": "2-3",
   "weight": 2.8,
   "time": 80,
-  "cat": "Strategi",
-  "spine": "images/spines/everdell.jpg",
-  "spineRatio": 0.292
+  "cat": "Strategi"
  },
  {
   "name": "Excalibur",
@@ -716,10 +594,7 @@
   "weight": 1.5,
   "time": 15,
   "cat": "Pussel",
-  "note": "Metallpussel, kontrollera",
-  "spine": "images/spines/excalibur.jpg",
-  "spineRatio": 2.327,
-  "spineFace": "front"
+  "note": "Metallpussel, kontrollera"
  },
  {
   "name": "EXIT",
@@ -731,9 +606,7 @@
   "time": 90,
   "cat": "Kooperativt",
   "note": "Vilket äventyr syns inte",
-  "coop": true,
-  "spine": "images/spines/exit.jpg",
-  "spineRatio": 0.383
+  "coop": true
  },
  {
   "name": "Flamecraft",
@@ -743,9 +616,7 @@
   "best": "3-4",
   "weight": 2.0,
   "time": 60,
-  "cat": "Familj",
-  "spine": "images/spines/flamecraft.jpg",
-  "spineRatio": 0.302
+  "cat": "Familj"
  },
  {
   "name": "Flamme Rouge",
@@ -755,9 +626,7 @@
   "best": "4",
   "weight": 1.7,
   "time": 45,
-  "cat": "Familj",
-  "spine": "images/spines/flamme-rouge.jpg",
-  "spineRatio": 0.212
+  "cat": "Familj"
  },
  {
   "name": "Flash Point: Fire Rescue",
@@ -768,9 +637,7 @@
   "weight": 2.2,
   "time": 45,
   "cat": "Kooperativt",
-  "coop": true,
-  "spine": "images/spines/flash-point-fire-rescue.jpg",
-  "spineRatio": 0.228
+  "coop": true
  },
  {
   "name": "Fleet: The Dice Game",
@@ -780,9 +647,7 @@
   "best": "2",
   "weight": 2.4,
   "time": 45,
-  "cat": "Roll & write",
-  "spine": "images/spines/fleet-the-dice-game.jpg",
-  "spineRatio": 0.27
+  "cat": "Roll & write"
  },
  {
   "name": "Flip 7",
@@ -792,10 +657,7 @@
   "best": "4-8",
   "weight": 1.0,
   "time": 20,
-  "cat": "Kortspel",
-  "spine": "images/spines/flip-7.jpg",
-  "spineRatio": 0.698,
-  "spineFace": "front"
+  "cat": "Kortspel"
  },
  {
   "name": "Forest Shuffle",
@@ -805,9 +667,7 @@
   "best": "2-3",
   "weight": 2.2,
   "time": 60,
-  "cat": "Strategi",
-  "spine": "images/spines/forest-shuffle.jpg",
-  "spineRatio": 0.312
+  "cat": "Strategi"
  },
  {
   "name": "Forest Shuffle: Dartmoor",
@@ -817,9 +677,7 @@
   "best": "2-3",
   "weight": 2.2,
   "time": 60,
-  "cat": "Strategi",
-  "spine": "images/spines/forest-shuffle-dartmoor.jpg",
-  "spineRatio": 0.312
+  "cat": "Strategi"
  },
  {
   "name": "Frosthaven",
@@ -830,10 +688,7 @@
   "weight": 4.3,
   "time": 120,
   "cat": "Kooperativt",
-  "coop": true,
-  "spine": "images/spines/frosthaven.jpg",
-  "spineRatio": 0.969,
-  "spineFace": "front"
+  "coop": true
  },
  {
   "name": "Fugitive",
@@ -843,9 +698,7 @@
   "best": "2",
   "weight": 1.6,
   "time": 20,
-  "cat": "Duell",
-  "spine": "images/spines/fugitive.jpg",
-  "spineRatio": 0.448
+  "cat": "Duell"
  },
  {
   "name": "Funkoverse: Harry Potter 100",
@@ -855,9 +708,7 @@
   "best": "2",
   "weight": 2.1,
   "time": 45,
-  "cat": "Strategi",
-  "spine": "images/spines/funkoverse-harry-potter-100.jpg",
-  "spineRatio": 0.318
+  "cat": "Strategi"
  },
  {
   "name": "Gen7",
@@ -868,9 +719,7 @@
   "weight": 2.7,
   "time": 120,
   "cat": "Kooperativt",
-  "coop": true,
-  "spine": "images/spines/gen7.jpg",
-  "spineRatio": 0.37
+  "coop": true
  },
  {
   "name": "Great Western Trail",
@@ -880,9 +729,7 @@
   "best": "2-3",
   "weight": 3.7,
   "time": 120,
-  "cat": "Strategi",
-  "spine": "images/spines/great-western-trail.jpg",
-  "spineRatio": 0.23
+  "cat": "Strategi"
  },
  {
   "name": "Great Western Trail (andra ex)",
@@ -894,10 +741,7 @@
   "time": 120,
   "cat": "Strategi",
   "note": "eggertspiele, utan expansioner",
-  "forSale": true,
-  "spine": "images/spines/great-western-trail-andra-ex.jpg",
-  "spineRatio": 3.137,
-  "spineFace": "front"
+  "forSale": true
  },
  {
   "name": "Great Western Trail: Rails to the North",
@@ -907,9 +751,7 @@
   "best": "2-3",
   "weight": 3.9,
   "time": 150,
-  "cat": "Strategi",
-  "spine": "images/spines/great-western-trail-rails-to-the-north.jpg",
-  "spineRatio": 0.223
+  "cat": "Strategi"
  },
  {
   "name": "Hadrian's Wall",
@@ -919,9 +761,7 @@
   "best": "1-4",
   "weight": 3.0,
   "time": 60,
-  "cat": "Roll & write",
-  "spine": "images/spines/hadrian-s-wall.jpg",
-  "spineRatio": 0.398
+  "cat": "Roll & write"
  },
  {
   "name": "Harmonies",
@@ -931,10 +771,7 @@
   "best": "2-3",
   "weight": 1.9,
   "time": 40,
-  "cat": "Familj",
-  "spine": "images/spines/harmonies.jpg",
-  "spineRatio": 2.222,
-  "spineFace": "front"
+  "cat": "Familj"
  },
  {
   "name": "Harry Potter: Hogwarts Battle",
@@ -945,10 +782,7 @@
   "weight": 2.1,
   "time": 60,
   "cat": "Kooperativt",
-  "coop": true,
-  "spine": "images/spines/harry-potter-hogwarts-battle.jpg",
-  "spineRatio": 2.807,
-  "spineFace": "front"
+  "coop": true
  },
  {
   "name": "Harry Potter: Hogwarts Battle (mindre låda)",
@@ -959,10 +793,7 @@
   "weight": 2.1,
   "time": 60,
   "cat": "Kooperativt",
-  "coop": true,
-  "spine": "images/spines/harry-potter-hogwarts-battle-mindre-lada.jpg",
-  "spineRatio": 3.46,
-  "spineFace": "front"
+  "coop": true
  },
  {
   "name": "Hasami Shogi",
@@ -973,10 +804,7 @@
   "weight": 1.7,
   "time": 20,
   "cat": "Abstrakt",
-  "note": "Japanskt abstrakt spel, tygpåse",
-  "spine": "images/spines/hasami-shogi.jpg",
-  "spineRatio": 0.702,
-  "spineFace": "front"
+  "note": "Japanskt abstrakt spel, tygpåse"
  },
  {
   "name": "Hive",
@@ -987,10 +815,7 @@
   "weight": 2.3,
   "time": 20,
   "cat": "Abstrakt",
-  "note": "Rund bärväska",
-  "spine": "images/spines/hive.jpg",
-  "spineRatio": 0.688,
-  "spineFace": "front"
+  "note": "Rund bärväska"
  },
  {
   "name": "Hues and Cues",
@@ -1000,9 +825,7 @@
   "best": "6+",
   "weight": 1.1,
   "time": 30,
-  "cat": "Party",
-  "spine": "images/spines/hues-and-cues.jpg",
-  "spineRatio": 0.318
+  "cat": "Party"
  },
  {
   "name": "Inis",
@@ -1012,9 +835,7 @@
   "best": "4",
   "weight": 2.9,
   "time": 90,
-  "cat": "Strategi",
-  "spine": "images/spines/inis.jpg",
-  "spineRatio": 0.417
+  "cat": "Strategi"
  },
  {
   "name": "Innovation (4th Edition)",
@@ -1024,9 +845,7 @@
   "best": "2",
   "weight": 2.7,
   "time": 60,
-  "cat": "Kortspel",
-  "spine": "images/spines/innovation-4th-edition.jpg",
-  "spineRatio": 0.35
+  "cat": "Kortspel"
  },
  {
   "name": "Jekyll & Hyde vs Scotland Yard",
@@ -1038,9 +857,7 @@
   "time": 20,
   "cat": "Kooperativt",
   "bgg": 377793,
-  "coop": true,
-  "spine": "images/spines/jekyll-hyde-vs-scotland-yard.jpg",
-  "spineRatio": 0.318
+  "coop": true
  },
  {
   "name": "K2",
@@ -1052,10 +869,7 @@
   "time": 60,
   "cat": "Strategi",
   "note": "Rebel",
-  "forSale": true,
-  "spine": "images/spines/k2.jpg",
-  "spineRatio": 3.636,
-  "spineFace": "front"
+  "forSale": true
  },
  {
   "name": "Konane",
@@ -1066,10 +880,7 @@
   "weight": 1.6,
   "time": 20,
   "cat": "Abstrakt",
-  "note": "Hawaiianskt abstrakt spel, tygpåse",
-  "spine": "images/spines/konane.jpg",
-  "spineRatio": 0.792,
-  "spineFace": "front"
+  "note": "Hawaiianskt abstrakt spel, tygpåse"
  },
  {
   "name": "Kvacksalvarna i Quedlinburg",
@@ -1080,9 +891,7 @@
   "weight": 1.9,
   "time": 45,
   "cat": "Familj",
-  "note": "Svensk utgåva",
-  "spine": "images/spines/kvacksalvarna-i-quedlinburg.jpg",
-  "spineRatio": 0.253
+  "note": "Svensk utgåva"
  },
  {
   "name": "Leviathan Wilds",
@@ -1093,9 +902,7 @@
   "weight": 2.6,
   "time": 60,
   "cat": "Kooperativt",
-  "coop": true,
-  "spine": "images/spines/leviathan-wilds.jpg",
-  "spineRatio": 0.295
+  "coop": true
  },
  {
   "name": "Looot",
@@ -1105,9 +912,7 @@
   "best": "2-3",
   "weight": 1.8,
   "time": 30,
-  "cat": "Familj",
-  "spine": "images/spines/looot.jpg",
-  "spineRatio": 0.323
+  "cat": "Familj"
  },
  {
   "name": "Lost Cities",
@@ -1117,9 +922,7 @@
   "best": "2",
   "weight": 1.5,
   "time": 30,
-  "cat": "Duell",
-  "spine": "images/spines/lost-cities.jpg",
-  "spineRatio": 0.21
+  "cat": "Duell"
  },
  {
   "name": "Lost Ruins of Arnak",
@@ -1129,9 +932,7 @@
   "best": "2-3",
   "weight": 2.9,
   "time": 90,
-  "cat": "Strategi",
-  "spine": "images/spines/lost-ruins-of-arnak.jpg",
-  "spineRatio": 0.325
+  "cat": "Strategi"
  },
  {
   "name": "Lost Ruins of Arnak – expansion",
@@ -1141,9 +942,7 @@
   "best": "2-3",
   "weight": 3.0,
   "time": 90,
-  "cat": "Strategi",
-  "spine": "images/spines/lost-ruins-of-arnak-expansion.jpg",
-  "spineRatio": 0.18
+  "cat": "Strategi"
  },
  {
   "name": "Lost Ruins of Arnak: Expedition Leaders",
@@ -1153,9 +952,7 @@
   "best": "2-3",
   "weight": 3.0,
   "time": 90,
-  "cat": "Strategi",
-  "spine": "images/spines/lost-ruins-of-arnak-expedition-leaders.jpg",
-  "spineRatio": 0.2
+  "cat": "Strategi"
  },
  {
   "name": "Love Letter",
@@ -1165,9 +962,7 @@
   "best": "4",
   "weight": 1.2,
   "time": 20,
-  "cat": "Kortspel",
-  "spine": "images/spines/love-letter.jpg",
-  "spineRatio": 0.265
+  "cat": "Kortspel"
  },
  {
   "name": "Lovecraft Letter",
@@ -1177,10 +972,7 @@
   "best": "4-5",
   "weight": 1.3,
   "time": 20,
-  "cat": "Kortspel",
-  "spine": "images/spines/lovecraft-letter.jpg",
-  "spineRatio": 1.767,
-  "spineFace": "front"
+  "cat": "Kortspel"
  },
  {
   "name": "LUZ",
@@ -1190,9 +982,7 @@
   "best": "4",
   "weight": 1.8,
   "time": 30,
-  "cat": "Kortspel",
-  "spine": "images/spines/luz.jpg",
-  "spineRatio": 0.275
+  "cat": "Kortspel"
  },
  {
   "name": "Machina Arcana",
@@ -1203,9 +993,7 @@
   "weight": 3.4,
   "time": 120,
   "cat": "Kooperativt",
-  "coop": true,
-  "spine": "images/spines/machina-arcana.jpg",
-  "spineRatio": 0.217
+  "coop": true
  },
  {
   "name": "Mandala Stones",
@@ -1215,9 +1003,7 @@
   "best": "2",
   "weight": 1.8,
   "time": 40,
-  "cat": "Abstrakt",
-  "spine": "images/spines/mandala-stones.jpg",
-  "spineRatio": 0.268
+  "cat": "Abstrakt"
  },
  {
   "name": "Mariposas",
@@ -1227,9 +1013,7 @@
   "best": "3-4",
   "weight": 2.4,
   "time": 60,
-  "cat": "Strategi",
-  "spine": "images/spines/mariposas.jpg",
-  "spineRatio": 0.21
+  "cat": "Strategi"
  },
  {
   "name": "Mascarade",
@@ -1239,9 +1023,7 @@
   "best": "6-10",
   "weight": 1.4,
   "time": 30,
-  "cat": "Party",
-  "spine": "images/spines/mascarade.jpg",
-  "spineRatio": 0.395
+  "cat": "Party"
  },
  {
   "name": "Mokumori Piri Piri Summoners",
@@ -1252,10 +1034,7 @@
   "weight": 2.0,
   "time": 30,
   "cat": "Strategi",
-  "bgg": 415128,
-  "spine": "images/spines/mokumori-piri-piri-summoners.jpg",
-  "spineRatio": 2.254,
-  "spineFace": "front"
+  "bgg": 415128
  },
  {
   "name": "Moon Colony Bloodbath",
@@ -1265,9 +1044,7 @@
   "best": "2-3",
   "weight": 2.2,
   "time": 45,
-  "cat": "Strategi",
-  "spine": "images/spines/moon-colony-bloodbath.jpg",
-  "spineRatio": 0.325
+  "cat": "Strategi"
  },
  {
   "name": "Munchkin",
@@ -1277,9 +1054,7 @@
   "best": "4-5",
   "weight": 1.8,
   "time": 90,
-  "cat": "Kortspel",
-  "spine": "images/spines/munchkin.jpg",
-  "spineRatio": 0.205
+  "cat": "Kortspel"
  },
  {
   "name": "Museum",
@@ -1290,9 +1065,7 @@
   "weight": 2.6,
   "time": 60,
   "cat": "Strategi",
-  "note": "Med alla expansioner",
-  "spine": "images/spines/museum.jpg",
-  "spineRatio": 0.287
+  "note": "Med alla expansioner"
  },
  {
   "name": "My City: Roll & Build",
@@ -1302,10 +1075,7 @@
   "best": "1-4",
   "weight": 1.6,
   "time": 30,
-  "cat": "Roll & write",
-  "spine": "images/spines/my-city-roll-build.jpg",
-  "spineRatio": 0.685,
-  "spineFace": "front"
+  "cat": "Roll & write"
  },
  {
   "name": "My Island",
@@ -1315,9 +1085,7 @@
   "best": "2-3",
   "weight": 2.0,
   "time": 40,
-  "cat": "Familj",
-  "spine": "images/spines/my-island.jpg",
-  "spineRatio": 0.383
+  "cat": "Familj"
  },
  {
   "name": "Mysterium",
@@ -1328,9 +1096,7 @@
   "weight": 1.9,
   "time": 45,
   "cat": "Kooperativt",
-  "coop": true,
-  "spine": "images/spines/mysterium.jpg",
-  "spineRatio": 0.318
+  "coop": true
  },
  {
   "name": "Nokosu Dice",
@@ -1341,10 +1107,7 @@
   "weight": 2.2,
   "time": 50,
   "cat": "Kortspel",
-  "bgg": 294693,
-  "spine": "images/spines/nokosu-dice.jpg",
-  "spineRatio": 1.189,
-  "spineFace": "front"
+  "bgg": 294693
  },
  {
   "name": "One Deck Dungeon",
@@ -1355,10 +1118,7 @@
   "weight": 2.2,
   "time": 30,
   "cat": "Kooperativt",
-  "coop": true,
-  "spine": "images/spines/one-deck-dungeon.jpg",
-  "spineRatio": 1.621,
-  "spineFace": "front"
+  "coop": true
  },
  {
   "name": "Onitama",
@@ -1368,9 +1128,7 @@
   "best": "2",
   "weight": 1.7,
   "time": 20,
-  "cat": "Abstrakt",
-  "spine": "images/spines/onitama.jpg",
-  "spineRatio": 0.427
+  "cat": "Abstrakt"
  },
  {
   "name": "Paint the Roses (Deluxe Edition)",
@@ -1381,9 +1139,7 @@
   "weight": 2.3,
   "time": 40,
   "cat": "Kooperativt",
-  "coop": true,
-  "spine": "images/spines/paint-the-roses-deluxe-edition.jpg",
-  "spineRatio": 0.247
+  "coop": true
  },
  {
   "name": "Pandemic",
@@ -1394,9 +1150,7 @@
   "weight": 2.4,
   "time": 45,
   "cat": "Kooperativt",
-  "coop": true,
-  "spine": "images/spines/pandemic.jpg",
-  "spineRatio": 0.182
+  "coop": true
  },
  {
   "name": "Pandemic: Fall of Rome",
@@ -1407,9 +1161,7 @@
   "weight": 2.6,
   "time": 60,
   "cat": "Kooperativt",
-  "coop": true,
-  "spine": "images/spines/pandemic-fall-of-rome.jpg",
-  "spineRatio": 0.165
+  "coop": true
  },
  {
   "name": "Pandemic: Hot Zone – North America",
@@ -1420,9 +1172,7 @@
   "weight": 1.9,
   "time": 30,
   "cat": "Kooperativt",
-  "coop": true,
-  "spine": "images/spines/pandemic-hot-zone-north-america.jpg",
-  "spineRatio": 0.385
+  "coop": true
  },
  {
   "name": "Patchwork Christmas Edition",
@@ -1432,9 +1182,7 @@
   "best": "2",
   "weight": 1.6,
   "time": 30,
-  "cat": "Duell",
-  "spine": "images/spines/patchwork-christmas-edition.jpg",
-  "spineRatio": 0.335
+  "cat": "Duell"
  },
  {
   "name": "Patchwork Doodle",
@@ -1444,9 +1192,7 @@
   "best": "2-4",
   "weight": 1.2,
   "time": 20,
-  "cat": "Roll & write",
-  "spine": "images/spines/patchwork-doodle.jpg",
-  "spineRatio": 0.367
+  "cat": "Roll & write"
  },
  {
   "name": "Pletrix & Pletrix Rainbow",
@@ -1457,9 +1203,7 @@
   "weight": 2.0,
   "time": 45,
   "cat": "Roll & write",
-  "bgg": 336212,
-  "spine": "images/spines/pletrix-pletrix-rainbow.jpg",
-  "spineRatio": 0.357
+  "bgg": 336212
  },
  {
   "name": "Point Salad",
@@ -1469,10 +1213,7 @@
   "best": "3-4",
   "weight": 1.2,
   "time": 20,
-  "cat": "Kortspel",
-  "spine": "images/spines/point-salad.jpg",
-  "spineRatio": 0.796,
-  "spineFace": "front"
+  "cat": "Kortspel"
  },
  {
   "name": "Port Royal",
@@ -1483,10 +1224,7 @@
   "weight": 1.7,
   "time": 40,
   "cat": "Kortspel",
-  "note": "Finsk utgåva",
-  "spine": "images/spines/port-royal.jpg",
-  "spineRatio": 0.731,
-  "spineFace": "front"
+  "note": "Finsk utgåva"
  },
  {
   "name": "Project L",
@@ -1497,9 +1235,7 @@
   "weight": 1.8,
   "time": 45,
   "cat": "Familj",
-  "note": "Asmodee",
-  "spine": "images/spines/project-l.jpg",
-  "spineRatio": 0.42
+  "note": "Asmodee"
  },
  {
   "name": "Qwirkle (reseutgåva)",
@@ -1510,9 +1246,7 @@
   "weight": 1.9,
   "time": 45,
   "cat": "Familj",
-  "note": "MindWare",
-  "spine": "images/spines/qwirkle-reseutgava.jpg",
-  "spineRatio": 0.495
+  "note": "MindWare"
  },
  {
   "name": "Race for the Galaxy",
@@ -1522,9 +1256,7 @@
   "best": "2",
   "weight": 3.0,
   "time": 45,
-  "cat": "Kortspel",
-  "spine": "images/spines/race-for-the-galaxy.jpg",
-  "spineRatio": 0.25
+  "cat": "Kortspel"
  },
  {
   "name": "Railroad Ink",
@@ -1534,10 +1266,7 @@
   "best": "1-4",
   "weight": 1.6,
   "time": 30,
-  "cat": "Roll & write",
-  "spine": "images/spines/railroad-ink.jpg",
-  "spineRatio": 1.049,
-  "spineFace": "front"
+  "cat": "Roll & write"
  },
  {
   "name": "Rebirth",
@@ -1548,10 +1277,7 @@
   "weight": 2.2,
   "time": 45,
   "cat": "Familj",
-  "note": "Reiner Knizia",
-  "spine": "images/spines/rebirth.jpg",
-  "spineRatio": 2.927,
-  "spineFace": "front"
+  "note": "Reiner Knizia"
  },
  {
   "name": "Reef",
@@ -1561,9 +1287,7 @@
   "best": "2-3",
   "weight": 1.8,
   "time": 45,
-  "cat": "Familj",
-  "spine": "images/spines/reef.jpg",
-  "spineRatio": 0.417
+  "cat": "Familj"
  },
  {
   "name": "Regicide",
@@ -1575,9 +1299,7 @@
   "time": 30,
   "cat": "Kooperativt",
   "note": "Nordisk utgåva",
-  "coop": true,
-  "spine": "images/spines/regicide.jpg",
-  "spineRatio": 0.273
+  "coop": true
  },
  {
   "name": "Rival Restaurants",
@@ -1587,9 +1309,7 @@
   "best": "4",
   "weight": 2.4,
   "time": 60,
-  "cat": "Strategi",
-  "spine": "images/spines/rival-restaurants.jpg",
-  "spineRatio": 0.333
+  "cat": "Strategi"
  },
  {
   "name": "Robin of Locksley",
@@ -1599,9 +1319,7 @@
   "best": "2",
   "weight": 2.1,
   "time": 40,
-  "cat": "Duell",
-  "spine": "images/spines/robin-of-locksley.jpg",
-  "spineRatio": 0.29
+  "cat": "Duell"
  },
  {
   "name": "Robo Rescue Origins",
@@ -1612,10 +1330,7 @@
   "weight": 1.5,
   "time": 15,
   "cat": "Kortspel",
-  "bgg": 446149,
-  "spine": "images/spines/robo-rescue-origins.jpg",
-  "spineRatio": 0.86,
-  "spineFace": "front"
+  "bgg": 446149
  },
  {
   "name": "Rolled West",
@@ -1625,9 +1340,7 @@
   "best": "2-3",
   "weight": 1.9,
   "time": 30,
-  "cat": "Roll & write",
-  "spine": "images/spines/rolled-west.jpg",
-  "spineRatio": 0.357
+  "cat": "Roll & write"
  },
  {
   "name": "Rome & Roll",
@@ -1637,9 +1350,7 @@
   "best": "1-2",
   "weight": 3.1,
   "time": 90,
-  "cat": "Roll & write",
-  "spine": "images/spines/rome-roll.jpg",
-  "spineRatio": 0.2
+  "cat": "Roll & write"
  },
  {
   "name": "Sagrada",
@@ -1649,9 +1360,7 @@
   "best": "2-3",
   "weight": 1.9,
   "time": 40,
-  "cat": "Familj",
-  "spine": "images/spines/sagrada.jpg",
-  "spineRatio": 0.223
+  "cat": "Familj"
  },
  {
   "name": "Santorini",
@@ -1662,9 +1371,7 @@
   "weight": 1.8,
   "time": 20,
   "cat": "Abstrakt",
-  "note": "Med expansion",
-  "spine": "images/spines/santorini.jpg",
-  "spineRatio": 0.195
+  "note": "Med expansion"
  },
  {
   "name": "Second Chance",
@@ -1674,9 +1381,7 @@
   "best": "3-4",
   "weight": 1.1,
   "time": 15,
-  "cat": "Roll & write",
-  "spine": "images/spines/second-chance.jpg",
-  "spineRatio": 0.343
+  "cat": "Roll & write"
  },
  {
   "name": "Sheriff of Nottingham",
@@ -1687,9 +1392,7 @@
   "weight": 1.6,
   "time": 60,
   "cat": "Party",
-  "note": "Med alla expansioner och promos",
-  "spine": "images/spines/sheriff-of-nottingham.jpg",
-  "spineRatio": 0.355
+  "note": "Med alla expansioner och promos"
  },
  {
   "name": "Shipwrights of the North Sea",
@@ -1699,9 +1402,7 @@
   "best": "3-4",
   "weight": 2.4,
   "time": 60,
-  "cat": "Strategi",
-  "spine": "images/spines/shipwrights-of-the-north-sea.jpg",
-  "spineRatio": 0.29
+  "cat": "Strategi"
  },
  {
   "name": "Shōgun no Katana",
@@ -1711,10 +1412,7 @@
   "best": "3",
   "weight": 3.6,
   "time": 120,
-  "cat": "Strategi",
-  "spine": "images/spines/shogun-no-katana.jpg",
-  "spineRatio": 1.011,
-  "spineFace": "front"
+  "cat": "Strategi"
  },
  {
   "name": "Sid Meier's Civilization: The Board Game",
@@ -1724,9 +1422,7 @@
   "best": "3-4",
   "weight": 3.6,
   "time": 240,
-  "cat": "Strategi",
-  "spine": "images/spines/sid-meier-s-civilization-the-board-game.jpg",
-  "spineRatio": 0.345
+  "cat": "Strategi"
  },
  {
   "name": "Silver & Gold: Pyramids",
@@ -1736,9 +1432,7 @@
   "best": "2-4",
   "weight": 1.2,
   "time": 20,
-  "cat": "Roll & write",
-  "spine": "images/spines/silver-gold-pyramids.jpg",
-  "spineRatio": 0.212
+  "cat": "Roll & write"
  },
  {
   "name": "Skip-Bo",
@@ -1748,9 +1442,7 @@
   "best": "3-4",
   "weight": 1.1,
   "time": 30,
-  "cat": "Kortspel",
-  "spine": "images/spines/skip-bo.jpg",
-  "spineRatio": 0.235
+  "cat": "Kortspel"
  },
  {
   "name": "Skull",
@@ -1760,9 +1452,7 @@
   "best": "4-6",
   "weight": 1.1,
   "time": 30,
-  "cat": "Party",
-  "spine": "images/spines/skull.jpg",
-  "spineRatio": 0.422
+  "cat": "Party"
  },
  {
   "name": "Skulls of Sedlec",
@@ -1772,10 +1462,7 @@
   "best": "2",
   "weight": 1.4,
   "time": 15,
-  "cat": "Kortspel",
-  "spine": "images/spines/skulls-of-sedlec.jpg",
-  "spineRatio": 0.838,
-  "spineFace": "front"
+  "cat": "Kortspel"
  },
  {
   "name": "Skulls of Sedlec – expansion",
@@ -1785,10 +1472,7 @@
   "best": "2",
   "weight": 1.5,
   "time": 20,
-  "cat": "Kortspel",
-  "spine": "images/spines/skulls-of-sedlec-expansion.jpg",
-  "spineRatio": 0.45,
-  "spineFace": "front"
+  "cat": "Kortspel"
  },
  {
   "name": "Sky Team",
@@ -1799,16 +1483,12 @@
   "weight": 1.8,
   "time": 20,
   "cat": "Kooperativt",
-  "coop": true,
-  "spine": "images/spines/sky-team.jpg",
-  "spineRatio": 0.253
+  "coop": true
  },
  {
   "name": "Solitaria",
   "type": "base",
-  "note": "BGG-data saknas, kontrollera",
-  "spine": "images/spines/solitaria.jpg",
-  "spineRatio": 0.177
+  "note": "BGG-data saknas, kontrollera"
  },
  {
   "name": "Spirit Island",
@@ -1819,9 +1499,7 @@
   "weight": 4.0,
   "time": 120,
   "cat": "Kooperativt",
-  "coop": true,
-  "spine": "images/spines/spirit-island.jpg",
-  "spineRatio": 0.27
+  "coop": true
  },
  {
   "name": "Spirits of the Forest",
@@ -1831,9 +1509,7 @@
   "best": "2",
   "weight": 1.6,
   "time": 20,
-  "cat": "Familj",
-  "spine": "images/spines/spirits-of-the-forest.jpg",
-  "spineRatio": 0.235
+  "cat": "Familj"
  },
  {
   "name": "Splendor Duel",
@@ -1843,9 +1519,7 @@
   "best": "2",
   "weight": 2.0,
   "time": 30,
-  "cat": "Duell",
-  "spine": "images/spines/splendor-duel.jpg",
-  "spineRatio": 0.44
+  "cat": "Duell"
  },
  {
   "name": "Star Wars: Rebellion",
@@ -1856,10 +1530,7 @@
   "weight": 3.7,
   "time": 240,
   "cat": "Strategi",
-  "forSale": true,
-  "spine": "images/spines/star-wars-rebellion.jpg",
-  "spineRatio": 2.54,
-  "spineFace": "front"
+  "forSale": true
  },
  {
   "name": "Sushi Go!",
@@ -1870,9 +1541,7 @@
   "weight": 1.2,
   "time": 15,
   "cat": "Kortspel",
-  "note": "Plåtask",
-  "spine": "images/spines/sushi-go.jpg",
-  "spineRatio": 0.285
+  "note": "Plåtask"
  },
  {
   "name": "Svea Rike",
@@ -1882,9 +1551,7 @@
   "best": "4-5",
   "weight": 2.9,
   "time": 120,
-  "cat": "Strategi",
-  "spine": "images/spines/svea-rike.jpg",
-  "spineRatio": 0.347
+  "cat": "Strategi"
  },
  {
   "name": "Tales of the Arthurian Knights",
@@ -1894,10 +1561,7 @@
   "best": "2-4",
   "weight": 2.5,
   "time": 90,
-  "cat": "Äventyr",
-  "spine": "images/spines/tales-of-the-arthurian-knights.jpg",
-  "spineRatio": 0.973,
-  "spineFace": "front"
+  "cat": "Äventyr"
  },
  {
   "name": "Tapestry",
@@ -1908,9 +1572,7 @@
   "weight": 2.9,
   "time": 120,
   "cat": "Strategi",
-  "note": "Med alla expansioner",
-  "spine": "images/spines/tapestry.jpg",
-  "spineRatio": 0.328
+  "note": "Med alla expansioner"
  },
  {
   "name": "Tatsu",
@@ -1920,9 +1582,7 @@
   "best": "2",
   "weight": 1.8,
   "time": 30,
-  "cat": "Abstrakt",
-  "spine": "images/spines/tatsu.jpg",
-  "spineRatio": 0.427
+  "cat": "Abstrakt"
  },
  {
   "name": "Tend",
@@ -1934,10 +1594,7 @@
   "time": 90,
   "cat": "Roll & write",
   "bgg": 427388,
-  "note": "Inplastad",
-  "spine": "images/spines/tend.jpg",
-  "spineRatio": 0.7,
-  "spineFace": "front"
+  "note": "Inplastad"
  },
  {
   "name": "Terra Mystica",
@@ -1947,9 +1604,7 @@
   "best": "4",
   "weight": 4.0,
   "time": 150,
-  "cat": "Strategi",
-  "spine": "images/spines/terra-mystica.jpg",
-  "spineRatio": 0.4
+  "cat": "Strategi"
  },
  {
   "name": "Terraforming Mars (big box)",
@@ -1960,10 +1615,7 @@
   "weight": 3.3,
   "time": 120,
   "cat": "Strategi",
-  "note": "Med alla expansioner",
-  "spine": "images/spines/terraforming-mars-big-box.jpg",
-  "spineRatio": 1.015,
-  "spineFace": "front"
+  "note": "Med alla expansioner"
  },
  {
   "name": "Terraforming Mars: Ares Expedition",
@@ -1973,9 +1625,7 @@
   "best": "2-3",
   "weight": 2.6,
   "time": 60,
-  "cat": "Strategi",
-  "spine": "images/spines/terraforming-mars-ares-expedition.jpg",
-  "spineRatio": 0.465
+  "cat": "Strategi"
  },
  {
   "name": "The Brain",
@@ -1987,10 +1637,7 @@
   "time": 15,
   "cat": "Kooperativt",
   "bgg": 391625,
-  "coop": true,
-  "spine": "images/spines/the-brain.jpg",
-  "spineRatio": 0.905,
-  "spineFace": "front"
+  "coop": true
  },
  {
   "name": "The Crew: Mission Deep Sea",
@@ -2001,9 +1648,7 @@
   "weight": 2.1,
   "time": 20,
   "cat": "Kooperativt",
-  "coop": true,
-  "spine": "images/spines/the-crew-mission-deep-sea.jpg",
-  "spineRatio": 0.367
+  "coop": true
  },
  {
   "name": "The Crew: Quest for Planet Nine",
@@ -2014,9 +1659,7 @@
   "weight": 2.0,
   "time": 20,
   "cat": "Kooperativt",
-  "coop": true,
-  "spine": "images/spines/the-crew-quest-for-planet-nine.jpg",
-  "spineRatio": 0.42
+  "coop": true
  },
  {
   "name": "The Fox Experiment",
@@ -2026,9 +1669,7 @@
   "best": "3-4",
   "weight": 2.6,
   "time": 60,
-  "cat": "Strategi",
-  "spine": "images/spines/the-fox-experiment.jpg",
-  "spineRatio": 0.27
+  "cat": "Strategi"
  },
  {
   "name": "The Fox in the Forest",
@@ -2038,9 +1679,7 @@
   "best": "2",
   "weight": 1.6,
   "time": 30,
-  "cat": "Duell",
-  "spine": "images/spines/the-fox-in-the-forest.jpg",
-  "spineRatio": 0.278
+  "cat": "Duell"
  },
  {
   "name": "The Fox in the Forest Duet",
@@ -2051,9 +1690,7 @@
   "weight": 1.8,
   "time": 30,
   "cat": "Kooperativt",
-  "coop": true,
-  "spine": "images/spines/the-fox-in-the-forest-duet.jpg",
-  "spineRatio": 0.405
+  "coop": true
  },
  {
   "name": "The Gang",
@@ -2064,9 +1701,7 @@
   "weight": 1.4,
   "time": 20,
   "cat": "Kooperativt",
-  "coop": true,
-  "spine": "images/spines/the-gang.jpg",
-  "spineRatio": 0.31
+  "coop": true
  },
  {
   "name": "The King Is Dead",
@@ -2076,9 +1711,7 @@
   "best": "2-3",
   "weight": 2.3,
   "time": 45,
-  "cat": "Strategi",
-  "spine": "images/spines/the-king-is-dead.jpg",
-  "spineRatio": 0.29
+  "cat": "Strategi"
  },
  {
   "name": "The Lord of the Rings: Fate of the Fellowship",
@@ -2089,9 +1722,7 @@
   "weight": 3.0,
   "time": 90,
   "cat": "Kooperativt",
-  "coop": true,
-  "spine": "images/spines/the-lord-of-the-rings-fate-of-the-fellowship.jpg",
-  "spineRatio": 0.315
+  "coop": true
  },
  {
   "name": "The Lord of the Rings: The Fellowship of the Ring – Trick-Taking Game",
@@ -2102,10 +1733,7 @@
   "weight": 2.0,
   "time": 30,
   "cat": "Kooperativt",
-  "coop": true,
-  "spine": "images/spines/the-lord-of-the-rings-the-fellowship-of-the-ring-trick-taking-game.jpg",
-  "spineRatio": 0.542,
-  "spineFace": "front"
+  "coop": true
  },
  {
   "name": "The Lost Expedition",
@@ -2116,9 +1744,7 @@
   "weight": 1.9,
   "time": 30,
   "cat": "Kooperativt",
-  "coop": true,
-  "spine": "images/spines/the-lost-expedition.jpg",
-  "spineRatio": 0.203
+  "coop": true
  },
  {
   "name": "The Mind",
@@ -2129,9 +1755,7 @@
   "weight": 1.1,
   "time": 20,
   "cat": "Kooperativt",
-  "coop": true,
-  "spine": "images/spines/the-mind.jpg",
-  "spineRatio": 0.163
+  "coop": true
  },
  {
   "name": "The Pillars of the Earth",
@@ -2141,9 +1765,7 @@
   "best": "4",
   "weight": 2.6,
   "time": 120,
-  "cat": "Strategi",
-  "spine": "images/spines/the-pillars-of-the-earth.jpg",
-  "spineRatio": 0.295
+  "cat": "Strategi"
  },
  {
   "name": "The Quest for El Dorado",
@@ -2153,9 +1775,7 @@
   "best": "3-4",
   "weight": 1.9,
   "time": 45,
-  "cat": "Familj",
-  "spine": "images/spines/the-quest-for-el-dorado.jpg",
-  "spineRatio": 0.263
+  "cat": "Familj"
  },
  {
   "name": "The Search for Lost Species",
@@ -2166,9 +1786,7 @@
   "weight": 2.9,
   "time": 75,
   "cat": "Deduktion",
-  "note": "Renegade Game Studios",
-  "spine": "images/spines/the-search-for-lost-species.jpg",
-  "spineRatio": 0.297
+  "note": "Renegade Game Studios"
  },
  {
   "name": "The Search for Planet X",
@@ -2178,9 +1796,7 @@
   "best": "3-4",
   "weight": 2.5,
   "time": 75,
-  "cat": "Deduktion",
-  "spine": "images/spines/the-search-for-planet-x.jpg",
-  "spineRatio": 0.285
+  "cat": "Deduktion"
  },
  {
   "name": "The Search for UAPs",
@@ -2191,9 +1807,7 @@
   "weight": 2.8,
   "time": 60,
   "cat": "Deduktion",
-  "note": "Renegade Game Studios",
-  "spine": "images/spines/the-search-for-uaps.jpg",
-  "spineRatio": 0.297
+  "note": "Renegade Game Studios"
  },
  {
   "name": "Threepia",
@@ -2203,9 +1817,7 @@
   "best": "2-4",
   "weight": 1.0,
   "time": 20,
-  "cat": "Familj",
-  "spine": "images/spines/threepia.jpg",
-  "spineRatio": 0.395
+  "cat": "Familj"
  },
  {
   "name": "Tiny Towns",
@@ -2216,9 +1828,7 @@
   "weight": 2.0,
   "time": 45,
   "cat": "Familj",
-  "note": "Med alla expansioner utom Architects",
-  "spine": "images/spines/tiny-towns.jpg",
-  "spineRatio": 0.22
+  "note": "Med alla expansioner utom Architects"
  },
  {
   "name": "Tokaido Duo",
@@ -2228,9 +1838,7 @@
   "best": "2",
   "weight": 1.6,
   "time": 30,
-  "cat": "Duell",
-  "spine": "images/spines/tokaido-duo.jpg",
-  "spineRatio": 0.207
+  "cat": "Duell"
  },
  {
   "name": "Trailblazers",
@@ -2241,9 +1849,7 @@
   "weight": 1.7,
   "time": 30,
   "cat": "Familj",
-  "bgg": 352454,
-  "spine": "images/spines/trailblazers.jpg",
-  "spineRatio": 0.28
+  "bgg": 352454
  },
  {
   "name": "Trajan",
@@ -2253,9 +1859,7 @@
   "best": "3-4",
   "weight": 3.6,
   "time": 120,
-  "cat": "Strategi",
-  "spine": "images/spines/trajan.jpg",
-  "spineRatio": 0.292
+  "cat": "Strategi"
  },
  {
   "name": "Trivial Pursuit Classic Edition",
@@ -2265,9 +1869,7 @@
   "best": "4-6",
   "weight": 1.7,
   "time": 90,
-  "cat": "Party",
-  "spine": "images/spines/trivial-pursuit-classic-edition.jpg",
-  "spineRatio": 0.235
+  "cat": "Party"
  },
  {
   "name": "Tzolk'in: The Mayan Calendar",
@@ -2277,9 +1879,7 @@
   "best": "4",
   "weight": 3.7,
   "time": 90,
-  "cat": "Strategi",
-  "spine": "images/spines/tzolk-in-the-mayan-calendar.jpg",
-  "spineRatio": 0.26
+  "cat": "Strategi"
  },
  {
   "name": "Ultimate Werewolf",
@@ -2289,9 +1889,7 @@
   "best": "10+",
   "weight": 1.2,
   "time": 30,
-  "cat": "Party",
-  "spine": "images/spines/ultimate-werewolf.jpg",
-  "spineRatio": 0.328
+  "cat": "Party"
  },
  {
   "name": "Verdant",
@@ -2301,9 +1899,7 @@
   "best": "2-3",
   "weight": 2.0,
   "time": 45,
-  "cat": "Familj",
-  "spine": "images/spines/verdant.jpg",
-  "spineRatio": 0.318
+  "cat": "Familj"
  },
  {
   "name": "Vinhos Deluxe Edition",
@@ -2313,10 +1909,7 @@
   "best": "3",
   "weight": 4.2,
   "time": 135,
-  "cat": "Strategi",
-  "spine": "images/spines/vinhos-deluxe-edition.jpg",
-  "spineRatio": 0.596,
-  "spineFace": "front"
+  "cat": "Strategi"
  },
  {
   "name": "Wandering Towers",
@@ -2326,9 +1919,7 @@
   "best": "3-4",
   "weight": 1.5,
   "time": 30,
-  "cat": "Familj",
-  "spine": "images/spines/wandering-towers.jpg",
-  "spineRatio": 0.325
+  "cat": "Familj"
  },
  {
   "name": "War Chest",
@@ -2338,10 +1929,7 @@
   "best": "2",
   "weight": 2.4,
   "time": 30,
-  "cat": "Abstrakt",
-  "spine": "images/spines/war-chest.jpg",
-  "spineRatio": 0.544,
-  "spineFace": "front"
+  "cat": "Abstrakt"
  },
  {
   "name": "Welcome To...",
@@ -2351,9 +1939,7 @@
   "best": "3-6",
   "weight": 1.8,
   "time": 25,
-  "cat": "Roll & write",
-  "spine": "images/spines/welcome-to.jpg",
-  "spineRatio": 0.212
+  "cat": "Roll & write"
  },
  {
   "name": "When I Dream",
@@ -2364,10 +1950,7 @@
   "weight": 1.2,
   "time": 30,
   "cat": "Party",
-  "forSale": true,
-  "spine": "images/spines/when-i-dream.jpg",
-  "spineRatio": 3.84,
-  "spineFace": "front"
+  "forSale": true
  },
  {
   "name": "Whitehall Mystery",
@@ -2377,9 +1960,7 @@
   "best": "2",
   "weight": 2.2,
   "time": 45,
-  "cat": "Deduktion",
-  "spine": "images/spines/whitehall-mystery.jpg",
-  "spineRatio": 0.282
+  "cat": "Deduktion"
  },
  {
   "name": "Wild: Serengeti",
@@ -2389,9 +1970,7 @@
   "best": "2-3",
   "weight": 2.3,
   "time": 60,
-  "cat": "Strategi",
-  "spine": "images/spines/wild-serengeti.jpg",
-  "spineRatio": 0.28
+  "cat": "Strategi"
  },
  {
   "name": "Wingspan",
@@ -2401,9 +1980,7 @@
   "best": "2-3",
   "weight": 2.5,
   "time": 60,
-  "cat": "Strategi",
-  "spine": "images/spines/wingspan.jpg",
-  "spineRatio": 0.285
+  "cat": "Strategi"
  },
  {
   "name": "Wingspan Asia",
@@ -2414,9 +1991,7 @@
   "weight": 2.5,
   "time": 60,
   "cat": "Strategi",
-  "note": "Fristående expansion",
-  "spine": "images/spines/wingspan-asia.jpg",
-  "spineRatio": 0.13
+  "note": "Fristående expansion"
  },
  {
   "name": "Wingspan Pocket",
@@ -2427,10 +2002,7 @@
   "weight": 2.0,
   "time": 30,
   "cat": "Kortspel",
-  "bgg": 473508,
-  "spine": "images/spines/wingspan-pocket.jpg",
-  "spineRatio": 0.779,
-  "spineFace": "front"
+  "bgg": 473508
  },
  {
   "name": "Wingspan: Americas Expansion",
@@ -2440,9 +2012,7 @@
   "best": "2-3",
   "weight": 2.5,
   "time": 60,
-  "cat": "Strategi",
-  "spine": "images/spines/wingspan-americas-expansion.jpg",
-  "spineRatio": 0.25
+  "cat": "Strategi"
  },
  {
   "name": "Wingspan: Oceania Expansion",
@@ -2452,9 +2022,7 @@
   "best": "2-3",
   "weight": 2.6,
   "time": 60,
-  "cat": "Strategi",
-  "spine": "images/spines/wingspan-oceania-expansion.jpg",
-  "spineRatio": 0.142
+  "cat": "Strategi"
  },
  {
   "name": "Wyrmspan",
@@ -2464,8 +2032,6 @@
   "best": "2-3",
   "weight": 2.5,
   "time": 90,
-  "cat": "Strategi",
-  "spine": "images/spines/wyrmspan.jpg",
-  "spineRatio": 0.235
+  "cat": "Strategi"
  }
 ]

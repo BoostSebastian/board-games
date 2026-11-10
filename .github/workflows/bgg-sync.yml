@@ -25,14 +25,10 @@ jobs:
         env:
           BGG_TOKEN: ${{ secrets.BGG_TOKEN }}
         run: node scripts/bgg-sync.mjs
-      - name: Ladda ner omslagsbilder
-        run: |
-          python3 -m pip install --user --quiet pillow
-          python3 scripts/bgg-images.py
       - name: Spara ändringar
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add games.json images
+          git add games.json
           git diff --cached --quiet || git commit -m "Uppdatera speldata från BoardGameGeek"
           git push
