@@ -316,6 +316,17 @@
   "cat": "Familj"
  },
  {
+  "name": "Calico",
+  "type": "base",
+  "min": 1,
+  "max": 4,
+  "best": "2-3",
+  "weight": 2.2,
+  "time": 45,
+  "cat": "Pussel",
+  "year": 2020
+ },
+ {
   "name": "Carcassonne",
   "type": "base",
   "min": 2,
@@ -326,6 +337,18 @@
   "cat": "Familj"
  },
  {
+  "name": "Cascadia",
+  "type": "base",
+  "min": 1,
+  "max": 4,
+  "best": "2-4",
+  "weight": 1.8,
+  "time": 45,
+  "cat": "Familj",
+  "year": 2021,
+  "note": "Landmarks ligger i samma låda"
+ },
+ {
   "name": "Cascadia: Landmarks",
   "type": "expansion",
   "min": 1,
@@ -333,7 +356,8 @@
   "best": "2-4",
   "weight": 2.0,
   "time": 45,
-  "cat": "Familj"
+  "cat": "Familj",
+  "base": "Cascadia"
  },
  {
   "name": "Catan",
