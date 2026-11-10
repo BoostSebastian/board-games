@@ -49,7 +49,8 @@
   "best": "2",
   "weight": 2.4,
   "time": 30,
-  "cat": "Duell"
+  "cat": "Duell",
+  "base": "7 Wonders Duel"
  },
  {
   "name": "A Feast for Odin",
@@ -69,7 +70,8 @@
   "best": "2",
   "weight": 3.9,
   "time": 120,
-  "cat": "Strategi"
+  "cat": "Strategi",
+  "base": "A Feast for Odin"
  },
  {
   "name": "Agent Avenue",
@@ -123,7 +125,8 @@
   "weight": 3.8,
   "time": 180,
   "cat": "Strategi",
-  "note": "Inplastad"
+  "note": "Inplastad",
+  "base": "Arcs"
  },
  {
   "name": "Ark Nova",
@@ -722,6 +725,17 @@
   "cat": "Strategi"
  },
  {
+  "name": "Ganz schön clever",
+  "type": "base",
+  "min": 1,
+  "max": 4,
+  "best": "1-2",
+  "weight": 1.9,
+  "time": 30,
+  "cat": "Roll & write",
+  "note": "That's Pretty Clever"
+ },
+ {
   "name": "Gen7",
   "type": "base",
   "min": 3,
@@ -750,7 +764,8 @@
   "best": "2-3",
   "weight": 3.9,
   "time": 150,
-  "cat": "Strategi"
+  "cat": "Strategi",
+  "base": "Great Western Trail"
  },
  {
   "name": "Hadrian's Wall",
@@ -940,7 +955,8 @@
   "best": "2-3",
   "weight": 3.0,
   "time": 90,
-  "cat": "Strategi"
+  "cat": "Strategi",
+  "base": "Lost Ruins of Arnak"
  },
  {
   "name": "Lost Ruins of Arnak: Expedition Leaders",
@@ -950,7 +966,8 @@
   "best": "2-3",
   "weight": 3.0,
   "time": 90,
-  "cat": "Strategi"
+  "cat": "Strategi",
+  "base": "Lost Ruins of Arnak"
  },
  {
   "name": "Love Letter",
@@ -1470,7 +1487,8 @@
   "best": "2",
   "weight": 1.5,
   "time": 20,
-  "cat": "Kortspel"
+  "cat": "Kortspel",
+  "base": "Skulls of Sedlec"
  },
  {
   "name": "Sky Team",
@@ -2049,7 +2067,8 @@
   "weight": 2.5,
   "time": 60,
   "cat": "Strategi",
-  "note": "Fristående expansion"
+  "note": "Fristående expansion",
+  "base": "Wingspan"
  },
  {
   "name": "Wingspan Pocket",
@@ -2070,7 +2089,8 @@
   "best": "2-3",
   "weight": 2.5,
   "time": 60,
-  "cat": "Strategi"
+  "cat": "Strategi",
+  "base": "Wingspan"
  },
  {
   "name": "Wingspan: Oceania Expansion",
@@ -2080,7 +2100,8 @@
   "best": "2-3",
   "weight": 2.6,
   "time": 60,
-  "cat": "Strategi"
+  "cat": "Strategi",
+  "base": "Wingspan"
  },
  {
   "name": "Wyrmspan",

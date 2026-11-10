@@ -124,3 +124,14 @@ dialog h2 { font-family: Georgia, serif; font-size: 22px; margin: 14px 0 6px; }
 dialog .tags { text-align: left; margin: 0; }
 .dnote { color: var(--mute); font-size: 14px; }
 .btn.link { display: block; text-align: center; text-decoration: none; padding: 12px; margin-top: 14px; }
+
+/* Expansioner */
+.tag.exp { background: var(--acc2); color: var(--acc); font-weight: 600; }
+.spine-exp {
+  position: absolute; top: 4px; left: 50%; transform: translateX(-50%);
+  font-size: 10px; line-height: 1; padding: 2px 3px; border-radius: 6px;
+  background: rgba(255,255,255,.85); color: #1f1b17; white-space: nowrap; writing-mode: horizontal-tb;
+}
+.spine.has-exp { padding-top: 22px; }
+.spine.is-exp { background-image: repeating-linear-gradient(135deg, rgba(255,255,255,.12) 0 6px, transparent 6px 12px) !important; border-top: 3px dashed rgba(255,255,255,.55); }
+.c.rel { font-size: 13px; padding: 5px 10px; }

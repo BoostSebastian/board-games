@@ -4,14 +4,16 @@
 
 const $ = (id) => document.getElementById(id);
 const st = {
-  pl: 0, wt: '', tm: 0, md: '', q: '', cat: '', best: false, exp: false,
+  pl: 0, wt: '', tm: 0, md: '', q: '', cat: '', best: false, ty: '',
   sort: 'name', pick: null, view: 'list',
 };
 let GAMES = [];
+let EXP = new Map(); // grundspelets namn → dess expansioner
 
 const PL = [['Alla', 0], ['1', 1], ['2', 2], ['3', 3], ['4', 4], ['5', 5], ['6', 6], ['7+', 7]];
 const WT = [['Alla', ''], ['Lätt <2', 'l'], ['Medel 2–3', 'm'], ['Tung 3+', 'h']];
 const TM = [['Alla', 0], ['≤30 min', 30], ['≤60 min', 60], ['≤90 min', 90], ['90+ min', -90]];
+const TY = [['Grundspel', ''], ['🧩 Med expansion', 'withexp'], ['Bara expansioner', 'exp'], ['Allt', 'all']];
 const MD = [['Alla', ''], ['🤝 Kooperativt', 'coop'], ['⚔️ Mot varandra', 'comp']];
 
 // Ryggfärger när spelet inte har någon bild ännu (färgen tas annars från omslaget).
@@ -45,7 +47,9 @@ function range(s) {
 }
 
 function match(g) {
-  if (!st.exp && g.type === 'expansion') return false;
+  if (st.ty === '' && g.type === 'expansion') return false;
+  if (st.ty === 'withexp' && (g.type === 'expansion' || !hasExp(g))) return false;
+  if (st.ty === 'exp' && g.type !== 'expansion') return false;
   if (st.q && !`${g.name} ${g.note || ''} ${g.cat || ''}`.toLowerCase().includes(st.q)) return false;
   if (st.cat && g.cat !== st.cat) return false;
   if (st.md === 'coop' && !g.coop) return false;
@@ -94,8 +98,18 @@ function weightBar(w) {
   return `<span class="wt">${[1, 2, 3, 4, 5].map((i) => `<i class="${i <= f ? 'f' : ''}"></i>`).join('')}</span>`;
 }
 
+// Expansioner som hör till ett grundspel (via "base" i games.json).
+function expansionsOf(g) { return EXP.get(g.name) || []; }
+// Har grundspelet expansioner, antingen som egna poster eller noterade i anmärkningen?
+function hasExp(g) { return g.type === 'base' && (expansionsOf(g).length > 0 || /expansion/i.test(g.note || '')); }
+function expBadge(g) {
+  if (!hasExp(g)) return '';
+  const n = expansionsOf(g).length;
+  return `<span class="tag exp" title="Har expansioner">🧩${n ? ` +${n}` : ''}</span>`;
+}
+
 function tagsFor(g) {
-  return [
+  return expBadge(g) + ' ' + [
     g.type === 'expansion' ? 'Expansion' : g.cat,
     g.coop && g.cat !== 'Kooperativt' ? 'Kooperativt' : null,
   ].filter(Boolean).map((t) => `<span class="tag">${esc(t)}</span>`).join(' ');
@@ -144,14 +158,26 @@ function spine(g, i, pick) {
   const h = Math.min(190, Math.round(116 + w * 13 + (hash(g.name) % 16)));
   const width = Math.round(26 + w * 6 + (g.type === 'expansion' ? -6 : 0));
   const bg = spineColor(g);
-  const img = '';
-  return `<button class="spine${pick ? ' pick' : ''}${g.coop ? ' coop' : ''}" type="button" data-i="${i}"
+  const n = expansionsOf(g).length;
+  const badge = hasExp(g) ? `<span class="spine-exp" title="Har expansioner">🧩${n ? n : ''}</span>` : '';
+  return `<button class="spine${pick ? ' pick' : ''}${g.coop ? ' coop' : ''}${g.type === 'expansion' ? ' is-exp' : ''}${badge ? ' has-exp' : ''}" type="button" data-i="${i}"
       style="--h:${h}px;height:${h}px;width:${width}px;background:${bg};color:${textOn(bg)}" title="${esc(g.name)}">
-    ${img}<span class="spine-name">${esc(g.name)}</span>
+    ${badge}<span class="spine-name">${esc(g.name)}</span>
   </button>`;
 }
 
 // ---------- Detaljvy ----------
+
+// Länkar mellan grundspel och expansioner i detaljvyn.
+function relatedFor(g) {
+  const link = (x) => `<button class="c rel" type="button" data-name="${esc(x.name)}">${esc(x.name)}</button>`;
+  if (g.type === 'expansion' && g.base) {
+    const base = GAMES.find((x) => x.name === g.base);
+    return base ? `<div class="lbl">Expansion till</div><div class="chips wrap">${link(base)}</div>` : '';
+  }
+  const exps = expansionsOf(g);
+  return exps.length ? `<div class="lbl">🧩 Expansioner</div><div class="chips wrap">${exps.map(link).join('')}</div>` : '';
+}
 
 function openDetail(g) {
   const d = $('detail');
@@ -162,6 +188,7 @@ function openDetail(g) {
     <p class="tags">${tagsFor(g)}</p>
     ${statsFor(g)}
     ${g.note ? `<p class="dnote">${esc(g.note)}</p>` : ''}
+    ${relatedFor(g)}
     <a class="btn link" href="${bggUrl(g)}" target="_blank" rel="noopener">Öppna på BoardGameGeek ↗</a>`;
   if (typeof d.showModal === 'function') d.showModal(); else d.setAttribute('open', '');
   loadCover(g);
@@ -196,7 +223,7 @@ async function loadCover(g) {
 // ---------- Rita ----------
 
 function draw() {
-  for (const key of ['pl', 'wt', 'tm', 'md', 'cat']) {
+  for (const key of ['pl', 'wt', 'tm', 'md', 'ty', 'cat']) {
     document.querySelectorAll(`#${key} .c`).forEach((b) => b.classList.toggle('on', String(st[key]) === b.dataset.v));
   }
   document.querySelectorAll('#views .c').forEach((b) => b.classList.toggle('on', b.dataset.v === st.view));
@@ -221,9 +248,9 @@ function draw() {
 }
 
 function reset() {
-  Object.assign(st, { pl: 0, wt: '', tm: 0, md: '', q: '', cat: '', best: false, exp: false, pick: null });
+  Object.assign(st, { pl: 0, wt: '', tm: 0, md: '', q: '', cat: '', best: false, ty: '', pick: null });
   $('q').value = '';
-  ['bestOnly', 'exp'].forEach((i) => ($(i).checked = false));
+  ['bestOnly'].forEach((i) => ($(i).checked = false));
   draw();
 }
 
@@ -242,11 +269,14 @@ async function init() {
   chips('wt', WT, 'wt');
   chips('tm', TM, 'tm');
   chips('md', MD, 'md');
+  chips('ty', TY, 'ty');
   st.view = load('view') === 'shelf' ? 'shelf' : 'list';
 
   const res = await fetch('games.json', { cache: 'no-cache' });
   const data = await res.json();
   GAMES = Array.isArray(data) ? data : data.games;
+  EXP = new Map();
+  for (const g of GAMES) if (g.base) EXP.set(g.base, [...(EXP.get(g.base) || []), g]);
   if (data.syncedAt) $('synced').textContent = `Senast uppdaterat från BGG ${data.syncedAt.slice(0, 10)}.`;
 
   const cats = [...new Set(GAMES.map((g) => g.cat).filter(Boolean))].sort(sv);
@@ -258,7 +288,6 @@ async function init() {
 
   $('q').oninput = (e) => { st.q = e.target.value.toLowerCase().trim(); st.pick = null; draw(); };
   $('bestOnly').onchange = (e) => { st.best = e.target.checked; draw(); };
-  $('exp').onchange = (e) => { st.exp = e.target.checked; draw(); };
   $('sort').onchange = (e) => { st.sort = e.target.value; draw(); };
   $('mbtn').onclick = () => { const o = $('more').classList.toggle('open'); $('mbtn').classList.toggle('on', o); };
   $('views').onclick = (e) => {
@@ -274,6 +303,12 @@ async function init() {
     const b = e.target.closest('[data-i]');
     if (b && draw.last) openDetail(draw.last[+b.dataset.i]);
   };
+  $('detailBody').addEventListener('click', (e) => {
+    const r = e.target.closest('.rel');
+    if (!r) return;
+    const g = GAMES.find((x) => x.name === r.dataset.name);
+    if (g) { $('detail').close(); openDetail(g); }
+  });
   $('detail').addEventListener('click', (e) => { if (e.target === $('detail') || e.target.closest('.close')) $('detail').close(); });
   $('rnd').onclick = () => {
     const pool = (draw.last || []).filter((g) => g.type !== 'expansion');
