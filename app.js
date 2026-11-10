@@ -142,21 +142,7 @@ function textOn(hex) {
 }
 
 function spine(g, i, pick) {
-  // Riktig rygg fotograferad från hyllan.
-  if (g.spine) {
-    const front = g.spineFace === 'front';
-    // Lådor som står med framsidan utåt visas lägre och bredare, som i en riktig hylla.
-    let h = front ? 150 : Math.min(190, Math.round(150 + Math.min(g.weight ?? 2, 4.5) * 9));
-    let width = Math.round(h * (g.spineRatio || 0.25));
-    const maxW = front ? 170 : 92;
-    if (width > maxW) { width = maxW; h = Math.round(width / (g.spineRatio || 1)); }
-    width = Math.max(width, 20);
-    return `<button class="spine photo${front ? ' front' : ''}${pick ? ' pick' : ''}${g.coop ? ' coop' : ''}" type="button" data-i="${i}"
-        style="--h:${h}px;height:${h}px;width:${width}px" title="${esc(g.name)}" aria-label="${esc(g.name)}">
-      <img src="${esc(g.spine)}" alt="" loading="lazy">
-    </button>`;
-  }
-  // Annars en ritad rygg. Tyngre spel får tjockare och högre ryggar.
+  // Tyngre spel får tjockare och högre ryggar, så hyllan ser levande ut.
   const w = Math.min(g.weight ?? 2, 4.5);
   const h = Math.min(190, Math.round(116 + w * 13 + (hash(g.name) % 16)));
   const width = Math.round(26 + w * 6 + (g.type === 'expansion' ? -6 : 0));
@@ -173,7 +159,7 @@ function spine(g, i, pick) {
 function openDetail(g) {
   const d = $('detail');
   $('detailBody').innerHTML = `
-    ${g.image || g.spine ? `<img class="cover" src="${esc(g.image || g.spine)}" alt="Omslag: ${esc(g.name)}">`
+    ${g.image ? `<img class="cover" src="${esc(g.image)}" alt="Omslag: ${esc(g.name)}">`
       : `<div class="cover none" style="background:${spineColor(g)};color:${textOn(spineColor(g))}">${esc(g.name)}</div>`}
     <h2>${esc(g.name)}${g.year ? ` <span class="year">${g.year}</span>` : ''}</h2>
     <p class="tags">${tagsFor(g)}</p>
