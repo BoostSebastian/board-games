@@ -38,8 +38,18 @@
   "best": "2",
   "weight": 2.2,
   "time": 30,
-  "cat": "Duell",
-  "note": "Med alla expansioner"
+  "cat": "Duell"
+ },
+ {
+  "name": "7 Wonders Duel: Agora",
+  "type": "expansion",
+  "base": "7 Wonders Duel",
+  "min": 2,
+  "max": 2,
+  "best": "2",
+  "weight": 2.5,
+  "time": 40,
+  "cat": "Duell"
  },
  {
   "name": "7 Wonders Duel: Pantheon",
@@ -113,8 +123,18 @@
   "best": "3",
   "weight": 3.4,
   "time": 120,
-  "cat": "Strategi",
-  "note": "Med alla expansioner"
+  "cat": "Strategi"
+ },
+ {
+  "name": "Arcs: Leaders & Lore Pack",
+  "type": "expansion",
+  "base": "Arcs",
+  "min": 2,
+  "max": 4,
+  "best": "3",
+  "weight": 3.4,
+  "time": 120,
+  "cat": "Strategi"
  },
  {
   "name": "Arcs: The Blighted Reach",
@@ -448,8 +468,18 @@
   "best": "3-4",
   "weight": 2.0,
   "time": 45,
-  "cat": "Familj",
-  "note": "Med expansion"
+  "cat": "Familj"
+ },
+ {
+  "name": "Cubitos: Fowl Play",
+  "type": "expansion",
+  "base": "Cubitos",
+  "min": 2,
+  "max": 6,
+  "best": "3-4",
+  "weight": 2.1,
+  "time": 45,
+  "cat": "Familj"
  },
  {
   "name": "Curious Cargo",
@@ -1079,8 +1109,62 @@
   "best": "3",
   "weight": 2.6,
   "time": 60,
-  "cat": "Strategi",
-  "note": "Med alla expansioner"
+  "cat": "Strategi"
+ },
+ {
+  "name": "Museum: The Archaeologists",
+  "type": "expansion",
+  "base": "Museum",
+  "min": 2,
+  "max": 4,
+  "best": "3",
+  "weight": 2.6,
+  "time": 60,
+  "cat": "Strategi"
+ },
+ {
+  "name": "Museum: The Black Market",
+  "type": "expansion",
+  "base": "Museum",
+  "min": 2,
+  "max": 5,
+  "best": "4",
+  "weight": 2.6,
+  "time": 60,
+  "cat": "Strategi"
+ },
+ {
+  "name": "Museum: The Cthulhu Relics",
+  "type": "expansion",
+  "base": "Museum",
+  "min": 2,
+  "max": 4,
+  "best": "3",
+  "weight": 2.6,
+  "time": 60,
+  "cat": "Strategi"
+ },
+ {
+  "name": "Museum: The People's Choice",
+  "type": "expansion",
+  "base": "Museum",
+  "min": 1,
+  "max": 4,
+  "best": "3",
+  "weight": 2.6,
+  "time": 60,
+  "cat": "Strategi"
+ },
+ {
+  "name": "Museum: The World's Fair",
+  "type": "expansion",
+  "base": "Museum",
+  "min": 2,
+  "max": 4,
+  "best": "3",
+  "weight": 2.6,
+  "time": 60,
+  "cat": "Strategi"
  },
  {
   "name": "My City: Roll & Build",
@@ -1407,7 +1491,18 @@
   "weight": 1.6,
   "time": 60,
   "cat": "Party",
-  "note": "Med alla expansioner och promos"
+  "note": "Med promos (bl.a. Arcane Scrolls)"
+ },
+ {
+  "name": "Sheriff of Nottingham: Merry Men",
+  "type": "expansion",
+  "base": "Sheriff of Nottingham",
+  "min": 3,
+  "max": 6,
+  "best": "5-6",
+  "weight": 1.7,
+  "time": 60,
+  "cat": "Party"
  },
  {
   "name": "Shipwrights of the North Sea",
@@ -1597,8 +1692,40 @@
   "best": "3",
   "weight": 2.9,
   "time": 120,
-  "cat": "Strategi",
-  "note": "Med alla expansioner"
+  "cat": "Strategi"
+ },
+ {
+  "name": "Tapestry: Arts & Architecture",
+  "type": "expansion",
+  "base": "Tapestry",
+  "min": 1,
+  "max": 5,
+  "best": "3",
+  "weight": 3.1,
+  "time": 120,
+  "cat": "Strategi"
+ },
+ {
+  "name": "Tapestry: Fantasies & Futures",
+  "type": "expansion",
+  "base": "Tapestry",
+  "min": 1,
+  "max": 5,
+  "best": "3",
+  "weight": 3.1,
+  "time": 120,
+  "cat": "Strategi"
+ },
+ {
+  "name": "Tapestry: Plans and Ploys",
+  "type": "expansion",
+  "base": "Tapestry",
+  "min": 1,
+  "max": 5,
+  "best": "3",
+  "weight": 3.0,
+  "time": 120,
+  "cat": "Strategi"
  },
  {
   "name": "Tatsu",
@@ -1640,8 +1767,7 @@
   "best": "3",
   "weight": 3.3,
   "time": 120,
-  "cat": "Strategi",
-  "note": "Med alla expansioner"
+  "cat": "Strategi"
  },
  {
   "name": "Terraforming Mars: Ares Expedition",
@@ -1651,6 +1777,61 @@
   "best": "2-3",
   "weight": 2.6,
   "time": 60,
+  "cat": "Strategi"
+ },
+ {
+  "name": "Terraforming Mars: Colonies",
+  "type": "expansion",
+  "base": "Terraforming Mars (big box)",
+  "min": 1,
+  "max": 5,
+  "best": "3",
+  "weight": 3.4,
+  "time": 150,
+  "cat": "Strategi"
+ },
+ {
+  "name": "Terraforming Mars: Hellas & Elysium",
+  "type": "expansion",
+  "base": "Terraforming Mars (big box)",
+  "min": 1,
+  "max": 5,
+  "best": "3",
+  "weight": 3.3,
+  "time": 120,
+  "cat": "Strategi"
+ },
+ {
+  "name": "Terraforming Mars: Prelude",
+  "type": "expansion",
+  "base": "Terraforming Mars (big box)",
+  "min": 1,
+  "max": 5,
+  "best": "3",
+  "weight": 3.2,
+  "time": 100,
+  "cat": "Strategi"
+ },
+ {
+  "name": "Terraforming Mars: Turmoil",
+  "type": "expansion",
+  "base": "Terraforming Mars (big box)",
+  "min": 1,
+  "max": 5,
+  "best": "3",
+  "weight": 3.6,
+  "time": 150,
+  "cat": "Strategi"
+ },
+ {
+  "name": "Terraforming Mars: Venus Next",
+  "type": "expansion",
+  "base": "Terraforming Mars (big box)",
+  "min": 1,
+  "max": 5,
+  "best": "3",
+  "weight": 3.4,
+  "time": 150,
   "cat": "Strategi"
  },
  {
@@ -1853,8 +2034,29 @@
   "best": "2-4",
   "weight": 2.0,
   "time": 45,
-  "cat": "Familj",
-  "note": "Med alla expansioner utom Architects"
+  "cat": "Familj"
+ },
+ {
+  "name": "Tiny Towns: Fortune",
+  "type": "expansion",
+  "base": "Tiny Towns",
+  "min": 1,
+  "max": 6,
+  "best": "2-4",
+  "weight": 2.1,
+  "time": 45,
+  "cat": "Familj"
+ },
+ {
+  "name": "Tiny Towns: Villagers",
+  "type": "expansion",
+  "base": "Tiny Towns",
+  "min": 1,
+  "max": 6,
+  "best": "2-4",
+  "weight": 2.2,
+  "time": 45,
+  "cat": "Familj"
  },
  {
   "name": "Tokaido Duo",
