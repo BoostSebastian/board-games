@@ -427,6 +427,17 @@
   "bgg": 367807
  },
  {
+  "name": "Crokinole",
+  "type": "base",
+  "min": 2,
+  "max": 4,
+  "best": "2",
+  "weight": 1.2,
+  "time": 30,
+  "cat": "Skicklighet",
+  "bgg": 521
+ },
+ {
   "name": "Cubitos",
   "type": "base",
   "min": 2,
