@@ -1237,6 +1237,32 @@
   "coop": true
  },
  {
+  "name": "Mysterium: Hidden Signs",
+  "year": 2016,
+  "type": "expansion",
+  "base": "Mysterium",
+  "min": 2,
+  "max": 7,
+  "best": "5-6",
+  "weight": 1.9,
+  "time": 45,
+  "cat": "Kooperativt",
+  "coop": true
+ },
+ {
+  "name": "Mysterium: Secrets & Lies",
+  "year": 2017,
+  "type": "expansion",
+  "base": "Mysterium",
+  "min": 2,
+  "max": 7,
+  "best": "5-6",
+  "weight": 1.9,
+  "time": 45,
+  "cat": "Kooperativt",
+  "coop": true
+ },
+ {
   "name": "Nokosu Dice",
   "type": "base",
   "min": 3,
