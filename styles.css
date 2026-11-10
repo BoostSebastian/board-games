@@ -125,3 +125,10 @@ dialog h2 { font-family: Georgia, serif; font-size: 22px; margin: 14px 0 6px; }
 dialog .tags { text-align: left; margin: 0; }
 .dnote { color: var(--mute); font-size: 14px; }
 .btn.link { display: block; text-align: center; text-decoration: none; padding: 12px; margin-top: 14px; }
+
+/* Fotograferade ryggar */
+.spine.photo { padding: 0; background: #2a2622; box-shadow: 0 1px 2px rgba(0,0,0,.35), inset 0 0 0 1px rgba(0,0,0,.25); }
+.spine.photo img { position: static; transform: none; width: 100%; height: 100%; aspect-ratio: auto; object-fit: cover; border-radius: inherit; opacity: 1; }
+.spine.photo.front { border-radius: 4px; }
+.spine.photo.coop { padding-bottom: 0; }
+.spine.photo.coop::before { bottom: 6px; width: 8px; height: 8px; margin-left: -4px; background: #fff; box-shadow: 0 0 0 2px rgba(0,0,0,.5); opacity: .9; }

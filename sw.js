@@ -1,5 +1,5 @@
 // Enkel offline-cache. Nätverk först så att uppdateringar syns, cache som reserv.
-const CACHE = 'spelhyllan-v3';
+const CACHE = 'spelhyllan-v4';
 const ASSETS = ['./', 'index.html', 'styles.css', 'app.js', 'games.json', 'manifest.webmanifest', 'icon.svg', 'icon-192.png', 'icon-512.png'];
 
 self.addEventListener('install', (e) => {
