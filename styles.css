@@ -64,3 +64,64 @@ main { padding-top: 10px; padding-bottom: 20px; }
 .foot a { color: var(--acc); font-weight: 600; text-decoration: none; white-space: nowrap; }
 .empty { text-align: center; color: var(--mute); padding: 40px 0; }
 .note { font-size: 12px; color: var(--mute); line-height: 1.5; padding-bottom: 30px; }
+
+/* ---------- Vyväxlare ---------- */
+.title-row { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.seg { display: flex; background: var(--chip); border-radius: 99px; padding: 3px; }
+.seg .c { border: 0; background: transparent; padding: 5px 11px; font-size: 13px; }
+.seg .c.on { background: var(--card); color: var(--ink); box-shadow: 0 1px 3px rgba(0,0,0,.15); }
+
+/* ---------- Listvy ---------- */
+.cards .card { display: flex; gap: 12px; width: 100%; text-align: left; font: inherit; color: inherit; cursor: pointer; }
+.thumb { width: 56px; height: 56px; object-fit: cover; border-radius: 10px; flex: none; background: var(--chip); }
+.body { flex: 1; min-width: 0; display: block; }
+.head { display: flex; }
+.tags { flex: none; text-align: right; }
+.year { color: var(--mute); font-weight: 400; font-size: 13px; }
+.foot { display: block; }
+
+/* ---------- Hyllvy ---------- */
+:root { --wood: #a8743f; --wood-d: #7d522a; --back: #ece4d8; }
+@media (prefers-color-scheme: dark) { :root { --wood: #6e4a28; --wood-d: #4a301a; --back: #1b1815; } }
+.shelf {
+  display: flex; flex-wrap: wrap; align-items: flex-start; align-content: flex-start;
+  padding: 0 10px; margin-top: 10px; border-radius: 12px;
+  background:
+    repeating-linear-gradient(to bottom, transparent 0 196px, var(--wood) 196px 208px, var(--wood-d) 208px 212px),
+    var(--back);
+  box-shadow: inset 0 0 0 6px var(--wood-d);
+}
+.spine {
+  position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden;
+  margin: 0 1px; margin-bottom: 16px; padding: 6px 0; border: 0; border-radius: 3px 3px 1px 1px; cursor: pointer;
+  font: inherit; font-size: 11.5px; font-weight: 600; letter-spacing: .02em;
+  box-shadow: inset -3px 0 0 rgba(0,0,0,.18), inset 2px 0 0 rgba(255,255,255,.12);
+  transition: transform .15s ease;
+  /* margin-top + höjd + margin-bottom = 212px, alltså exakt en hyllplanka per rad */
+}
+.shelf::after { content: ''; flex: 1 0 0; height: 212px; }
+.shelf > .spine { margin-top: calc(212px - 16px - var(--h, 0px)); }
+.spine:hover, .spine:focus-visible { transform: translateY(-6px); outline: none; }
+.spine.pick { transform: translateY(-14px); box-shadow: 0 0 0 3px var(--acc); }
+.spine img { position: absolute; top: 4px; left: 50%; transform: translateX(-50%); width: calc(100% - 6px); aspect-ratio: 1; object-fit: cover; border-radius: 2px; opacity: .95; }
+.spine img + .spine-name { margin-top: 30px; }
+.spine-name {
+  writing-mode: vertical-rl; transform: rotate(180deg); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  max-height: 100%; line-height: 1.1;
+}
+.spine.coop { padding-bottom: 16px; }
+.spine.coop::before { content: ''; position: absolute; bottom: 6px; left: 50%; width: 6px; height: 6px; margin-left: -3px; border-radius: 50%; background: currentColor; opacity: .7; }
+
+/* ---------- Detaljvy ---------- */
+dialog {
+  width: min(520px, calc(100% - 24px)); max-height: calc(100% - 40px); border: 0; border-radius: 20px; padding: 18px;
+  background: var(--card); color: var(--ink); box-shadow: 0 20px 60px rgba(0,0,0,.35);
+}
+dialog::backdrop { background: rgba(20,16,12,.55); }
+dialog .close { position: absolute; top: 10px; right: 10px; width: 34px; height: 34px; border-radius: 50%; border: 0; background: var(--chip); color: var(--ink); font-size: 16px; cursor: pointer; }
+.cover { display: block; width: 100%; max-height: 52vh; object-fit: contain; border-radius: 12px; background: var(--chip); }
+.cover.none { height: 180px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 20px; padding: 20px; text-align: center; }
+dialog h2 { font-family: Georgia, serif; font-size: 22px; margin: 14px 0 6px; }
+dialog .tags { text-align: left; margin: 0; }
+.dnote { color: var(--mute); font-size: 14px; }
+.btn.link { display: block; text-align: center; text-decoration: none; padding: 12px; margin-top: 14px; }

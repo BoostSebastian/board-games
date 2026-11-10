@@ -2,7 +2,9 @@
 
 En webbapp (PWA) för brädspelssamlingen. Den fungerar i mobilen och på datorn, kan installeras på hemskärmen och fungerar offline.
 
-- **Filter** på antal spelare, vikt (1 lätt – 5 tung), speltid och kategori
+- **Två vyer**: lista eller **bokhylla** där spelen står som lådryggar. Det du filtrerar bort försvinner från hyllan.
+- **Tryck på ett spel** för omslag, detaljer och länk till BoardGameGeek
+- **Filter** på antal spelare, vikt (1 lätt – 5 tung), speltid, kategori och **spelläge** (kooperativt eller mot varandra)
 - **Bäst med**: visa bara spel som BGG-communityn tycker är bäst med valt antal spelare
 - **Slumpa**: välj ett spel bland dem som matchar filtren
 - **Sortering** på namn, vikt, speltid eller BGG-betyg
@@ -42,7 +44,9 @@ All data finns i [`games.json`](games.json). Lägg till ett spel direkt i GitHub
 | `cat` | Kategori (Strategi, Familj, Kortspel, Kooperativt, Party, Duell, Abstrakt, Roll & write, Deduktion …) |
 | `bgg` | BGG-id, siffran i spelets adress på boardgamegeek.com (valfritt) |
 | `note` | Anmärkning, t.ex. vilka expansioner som ingår (valfritt) |
+| `coop` | `true` om spelet är kooperativt (valfritt, sätts även av synken) |
 | `forSale` | `true` om spelet ska säljas (valfritt) |
+| `image`, `color` | Omslagsbild i `images/` och ryggfärg. Fylls i av synken |
 
 Har du `bgg` och en BGG-token (se nedan) räcker det med `name`, `type` och `bgg`. Resten fylls i automatiskt.
 
@@ -58,8 +62,9 @@ Därför hämtas datan i förväg av en GitHub Action och sparas i `games.json`.
 
 Workflowen
 - slår upp BGG-id för spel som saknar det,
-- hämtar spelarantal, bästa antal, vikt, speltid, utgivningsår och betyg,
-- committar `games.json` om något ändrats,
+- hämtar spelarantal, bästa antal, vikt, speltid, utgivningsår, betyg och om spelet är kooperativt,
+- laddar ner omslagsbilderna till `images/` (max 480 px) och tar fram en ryggfärg ur varje omslag,
+- committar `games.json` och `images/` om något ändrats,
 - körs dessutom automatiskt den första varje månad.
 
 Namn, typ, anmärkningar och `forSale` ändras aldrig av synken. Kontrollera gärna att id:n som hittats automatiskt stämmer (tryck *BGG ↗* på spelet).
@@ -82,9 +87,11 @@ och öppna <http://localhost:8000>.
 | --- | --- |
 | `index.html` | Sidan |
 | `styles.css` | Utseende (mobil först, ljust/mörkt läge) |
-| `app.js` | Filter, sortering, slumpa, CSV-export |
+| `app.js` | Lista, hylla, detaljvy, filter, sortering, slumpa, CSV-export |
 | `games.json` | Alla spel med metadata |
 | `scripts/bgg-sync.mjs` | Hämtar data från BGG:s XML API2 |
+| `scripts/bgg-images.py` | Laddar ner omslag till `images/` och räknar fram ryggfärg |
+| `images/` | Omslagsbilder, en per BGG-id |
 | `.github/workflows/bgg-sync.yml` | Kör synken manuellt eller varje månad |
 | `sw.js` | Service worker för offlinestöd |
 | `manifest.webmanifest`, `icon*` | Gör appen installerbar |

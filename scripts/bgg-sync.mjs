@@ -8,7 +8,8 @@
 // För varje spel:
 //   1. saknas "bgg" (BGG-id) söks spelet upp på namn och id:t sparas
 //   2. min/max spelare, bästa antal (communityns röstning), vikt, speltid,
-//      år och betyg hämtas och skriver över de värden som finns
+//      år, betyg, omslagsbild (imageUrl) och om spelet är kooperativt hämtas
+//   3. scripts/bgg-images.py laddar sedan ner bilderna till images/
 // Namn, typ, anmärkning och "forSale" rörs aldrig.
 
 import { readFile, writeFile } from 'node:fs/promises';
@@ -70,6 +71,8 @@ function parseThing(item) {
     weight: num(attr(item, 'averageweight')),
     rating: num(attr(item, 'average')),
     best: bestFrom(item),
+    imageUrl: (item.match(/<image>\s*([^<]+?)\s*<\/image>/) || [])[1] || null,
+    coop: /<link type="boardgamemechanic" id="2023"/.test(item),
   };
 }
 
@@ -104,6 +107,8 @@ for (const g of games) {
   if (t.weight) g.weight = Math.round(t.weight * 10) / 10;
   if (t.rating) g.rating = Math.round(t.rating * 10) / 10;
   if (t.best) g.best = t.best;
+  if (t.imageUrl) g.imageUrl = t.imageUrl;
+  if (t.coop) g.coop = true; // manuellt satta coop-flaggor tas aldrig bort
   updated++;
 }
 

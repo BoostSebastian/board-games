@@ -15,7 +15,13 @@
 </head>
 <body>
   <header class="top">
-    <h1>Spelhyllan</h1>
+    <div class="title-row">
+      <h1>Spelhyllan</h1>
+      <div class="seg" id="views" role="tablist" aria-label="Vy">
+        <button class="c" type="button" data-v="list">☰ Lista</button>
+        <button class="c" type="button" data-v="shelf">📚 Hylla</button>
+      </div>
+    </div>
     <p class="sub" id="sub">Laddar…</p>
   </header>
 
@@ -34,6 +40,8 @@
     <div class="chips" id="wt"></div>
     <div class="lbl">Speltid</div>
     <div class="chips" id="tm"></div>
+    <div class="lbl">Spelläge</div>
+    <div class="chips" id="md"></div>
 
     <div class="more" id="more">
       <div class="lbl">Kategori</div>
@@ -56,17 +64,23 @@
           <option value="time">Kortast först</option>
           <option value="-time">Längst först</option>
           <option value="-rating">Högst BGG-betyg</option>
+          <option value="coop">Kooperativa först</option>
         </select>
         <button class="c" id="mbtn" type="button">Fler filter</button>
       </span>
     </div>
   </section>
 
-  <main id="list"></main>
+  <main id="list" class="cards"></main>
+
+  <dialog id="detail" aria-label="Spel">
+    <button class="close" type="button" aria-label="Stäng">✕</button>
+    <div id="detailBody"></div>
+  </dialog>
 
   <footer class="note">
     Spelarantal, bästa antal, vikt (1 lätt – 5 tung) och speltid kommer från BoardGameGeek.
-    <span id="synced"></span> Tryck <b>BGG ↗</b> för att öppna spelet där.
+    <span id="synced"></span> Tryck på ett spel för detaljer och länk till BoardGameGeek.
   </footer>
 
   <script src="app.js"></script>
