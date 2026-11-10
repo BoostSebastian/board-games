@@ -1971,6 +1971,30 @@
   "cat": "Strategi"
  },
  {
+  "name": "The Lord of the Rings: Duel for Middle-earth",
+  "type": "base",
+  "min": 2,
+  "max": 2,
+  "best": "2",
+  "weight": 2.2,
+  "time": 30,
+  "cat": "Strategi",
+  "bgg": 418059,
+  "year": 2024
+ },
+ {
+  "name": "The Lord of the Rings: Duel for Middle-earth – Allies",
+  "type": "expansion",
+  "base": "The Lord of the Rings: Duel for Middle-earth",
+  "min": 2,
+  "max": 2,
+  "best": "2",
+  "weight": 2.3,
+  "time": 30,
+  "cat": "Strategi",
+  "year": 2025
+ },
+ {
   "name": "The Lord of the Rings: Fate of the Fellowship",
   "type": "base",
   "min": 1,
