@@ -8,7 +8,7 @@ En webbapp (PWA) för brädspelssamlingen. Den fungerar i mobilen och på datorn
 - **Bäst med**: visa bara spel som BGG-communityn tycker är bäst med valt antal spelare
 - **Slumpa**: välj ett spel bland dem som matchar filtren
 - **Sortering** på namn, vikt, speltid eller BGG-betyg
-- **Expansioner** är dolda som standard och kan visas under *Fler filter*
+- **Expansioner**: grundspel som har expansioner märks med 🧩. Under *Visa* väljer du grundspel, bara de med expansion, bara expansioner eller allt. I detaljvyn länkas grundspel och expansioner till varandra
 - **Kopiera som CSV** för att klistra in samlingen i Excel
 - Varje spel länkar till sin sida på BoardGameGeek
 
@@ -44,6 +44,7 @@ All data finns i [`games.json`](games.json). Lägg till ett spel direkt i GitHub
 | `cat` | Kategori (Strategi, Familj, Kortspel, Kooperativt, Party, Duell, Abstrakt, Roll & write, Deduktion …) |
 | `bgg` | BGG-id, siffran i spelets adress på boardgamegeek.com (valfritt) |
 | `note` | Anmärkning, t.ex. vilka expansioner som ingår (valfritt) |
+| `base` | För expansioner: namnet på grundspelet (valfritt) |
 | `coop` | `true` om spelet är kooperativt (valfritt, sätts även av synken) |
 | `imageUrl` | Länk till omslaget på BGG. Fylls i av synken |
 
