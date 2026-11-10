@@ -8,8 +8,8 @@
 // För varje spel:
 //   1. saknas "bgg" (BGG-id) söks spelet upp på namn och id:t sparas
 //   2. min/max spelare, bästa antal (communityns röstning), vikt, speltid,
-//      år, betyg, omslagsbild (imageUrl) och om spelet är kooperativt hämtas
-//   3. scripts/bgg-images.py laddar sedan ner bilderna till images/
+//      år, betyg, länk till omslaget (imageUrl) och om spelet är kooperativt hämtas.
+//      Bilden sparas inte i repot, appen visar den direkt från BGG när man trycker på spelet.
 // Namn, typ, anmärkning och "forSale" rörs aldrig.
 
 import { readFile, writeFile } from 'node:fs/promises';
