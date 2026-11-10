@@ -408,6 +408,31 @@
   "cat": "Strategi"
  },
  {
+  "name": "Concordia: Salsa",
+  "type": "expansion",
+  "base": "Concordia",
+  "min": 2,
+  "max": 5,
+  "best": "4",
+  "weight": 3.1,
+  "time": 100,
+  "cat": "Strategi",
+  "note": "Salt-expansionen, med kartorna Byzantium och Alexandria"
+ },
+ {
+  "name": "Concordia: Solitaria",
+  "type": "expansion",
+  "base": "Concordia",
+  "min": 1,
+  "max": 2,
+  "best": "1",
+  "weight": 3.0,
+  "time": 60,
+  "cat": "Strategi",
+  "coop": true,
+  "note": "Solo- och tvåspelar-coop"
+ },
+ {
   "name": "Condottiere",
   "type": "base",
   "min": 2,
