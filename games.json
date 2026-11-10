@@ -732,18 +732,6 @@
   "cat": "Strategi"
  },
  {
-  "name": "Great Western Trail (andra ex)",
-  "type": "base",
-  "min": 1,
-  "max": 4,
-  "best": "2-3",
-  "weight": 3.7,
-  "time": 120,
-  "cat": "Strategi",
-  "note": "eggertspiele, utan expansioner",
-  "forSale": true
- },
- {
   "name": "Great Western Trail: Rails to the North",
   "type": "expansion",
   "min": 1,
@@ -868,8 +856,7 @@
   "weight": 2.3,
   "time": 60,
   "cat": "Strategi",
-  "note": "Rebel",
-  "forSale": true
+  "note": "Rebel"
  },
  {
   "name": "Konane",
@@ -1529,8 +1516,7 @@
   "best": "2",
   "weight": 3.7,
   "time": 240,
-  "cat": "Strategi",
-  "forSale": true
+  "cat": "Strategi"
  },
  {
   "name": "Sudoku Deluxe (Iron & Glory)",
@@ -2011,8 +1997,7 @@
   "best": "6-8",
   "weight": 1.2,
   "time": 30,
-  "cat": "Party",
-  "forSale": true
+  "cat": "Party"
  },
  {
   "name": "Whitehall Mystery",

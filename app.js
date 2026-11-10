@@ -4,7 +4,7 @@
 
 const $ = (id) => document.getElementById(id);
 const st = {
-  pl: 0, wt: '', tm: 0, md: '', q: '', cat: '', best: false, exp: false, sale: false,
+  pl: 0, wt: '', tm: 0, md: '', q: '', cat: '', best: false, exp: false,
   sort: 'name', pick: null, view: 'list',
 };
 let GAMES = [];
@@ -46,7 +46,6 @@ function range(s) {
 
 function match(g) {
   if (!st.exp && g.type === 'expansion') return false;
-  if (!st.sale && g.forSale) return false;
   if (st.q && !`${g.name} ${g.note || ''} ${g.cat || ''}`.toLowerCase().includes(st.q)) return false;
   if (st.cat && g.cat !== st.cat) return false;
   if (st.md === 'coop' && !g.coop) return false;
@@ -99,8 +98,7 @@ function tagsFor(g) {
   return [
     g.type === 'expansion' ? 'Expansion' : g.cat,
     g.coop && g.cat !== 'Kooperativt' ? 'Kooperativt' : null,
-  ].filter(Boolean).map((t) => `<span class="tag">${esc(t)}</span>`).join(' ') +
-    (g.forSale ? ' <span class="tag sale">Till salu</span>' : '');
+  ].filter(Boolean).map((t) => `<span class="tag">${esc(t)}</span>`).join(' ');
 }
 
 function statsFor(g) {
@@ -223,17 +221,17 @@ function draw() {
 }
 
 function reset() {
-  Object.assign(st, { pl: 0, wt: '', tm: 0, md: '', q: '', cat: '', best: false, exp: false, sale: false, pick: null });
+  Object.assign(st, { pl: 0, wt: '', tm: 0, md: '', q: '', cat: '', best: false, exp: false, pick: null });
   $('q').value = '';
-  ['bestOnly', 'exp', 'sale'].forEach((i) => ($(i).checked = false));
+  ['bestOnly', 'exp'].forEach((i) => ($(i).checked = false));
   draw();
 }
 
 async function copyCsv(e) {
   const c = (v) => `"${String(v ?? '').replace(/"/g, '""')}"`;
-  const rows = ['Spel;Typ;Kategori;Kooperativt;Min;Max;Bäst;Vikt;Minuter;BGG-betyg;Till salu;Anmärkning']
+  const rows = ['Spel;Typ;Kategori;Kooperativt;Min;Max;Bäst;Vikt;Minuter;BGG-betyg;Anmärkning']
     .concat(GAMES.map((g) => [g.name, g.type === 'expansion' ? 'Expansion' : 'Grundspel', g.cat, g.coop ? 'Ja' : '',
-      g.min, g.max, g.best, g.weight, g.time, g.rating, g.forSale ? 'Ja' : '', g.note].map(c).join(';')));
+      g.min, g.max, g.best, g.weight, g.time, g.rating, g.note].map(c).join(';')));
   try { await navigator.clipboard.writeText(rows.join('\n')); e.target.textContent = 'Kopierat!'; }
   catch { e.target.textContent = 'Gick inte att kopiera'; }
   setTimeout(() => (e.target.textContent = 'Kopiera som CSV'), 1800);
@@ -254,15 +252,13 @@ async function init() {
   const cats = [...new Set(GAMES.map((g) => g.cat).filter(Boolean))].sort(sv);
   chips('cat', [['Alla', ''], ...cats.map((c) => [c, c])], 'cat');
 
-  const base = GAMES.filter((g) => g.type === 'base' && !g.forSale).length;
+  const base = GAMES.filter((g) => g.type === 'base').length;
   const exp = GAMES.filter((g) => g.type === 'expansion').length;
-  const sale = GAMES.filter((g) => g.forSale).length;
-  $('sub').textContent = `${base} spel · ${exp} expansioner · ${sale} till salu`;
+  $('sub').textContent = `${base} spel · ${exp} expansioner`;
 
   $('q').oninput = (e) => { st.q = e.target.value.toLowerCase().trim(); st.pick = null; draw(); };
   $('bestOnly').onchange = (e) => { st.best = e.target.checked; draw(); };
   $('exp').onchange = (e) => { st.exp = e.target.checked; draw(); };
-  $('sale').onchange = (e) => { st.sale = e.target.checked; draw(); };
   $('sort').onchange = (e) => { st.sort = e.target.value; draw(); };
   $('mbtn').onclick = () => { const o = $('more').classList.toggle('open'); $('mbtn').classList.toggle('on', o); };
   $('views').onclick = (e) => {

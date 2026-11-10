@@ -10,7 +10,7 @@
 //   2. min/max spelare, bästa antal (communityns röstning), vikt, speltid,
 //      år, betyg, länk till omslaget (imageUrl) och om spelet är kooperativt hämtas.
 //      Bilden sparas inte i repot, appen visar den direkt från BGG när man trycker på spelet.
-// Namn, typ, anmärkning och "forSale" rörs aldrig.
+// Namn, typ och anmärkning rörs aldrig.
 
 import { readFile, writeFile } from 'node:fs/promises';
 

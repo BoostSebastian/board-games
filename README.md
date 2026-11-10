@@ -8,7 +8,7 @@ En webbapp (PWA) för brädspelssamlingen. Den fungerar i mobilen och på datorn
 - **Bäst med**: visa bara spel som BGG-communityn tycker är bäst med valt antal spelare
 - **Slumpa**: välj ett spel bland dem som matchar filtren
 - **Sortering** på namn, vikt, speltid eller BGG-betyg
-- **Expansioner** och **spel som ska säljas** är dolda som standard och kan visas under *Fler filter*
+- **Expansioner** är dolda som standard och kan visas under *Fler filter*
 - **Kopiera som CSV** för att klistra in samlingen i Excel
 - Varje spel länkar till sin sida på BoardGameGeek
 
@@ -45,7 +45,6 @@ All data finns i [`games.json`](games.json). Lägg till ett spel direkt i GitHub
 | `bgg` | BGG-id, siffran i spelets adress på boardgamegeek.com (valfritt) |
 | `note` | Anmärkning, t.ex. vilka expansioner som ingår (valfritt) |
 | `coop` | `true` om spelet är kooperativt (valfritt, sätts även av synken) |
-| `forSale` | `true` om spelet ska säljas (valfritt) |
 | `imageUrl` | Länk till omslaget på BGG. Fylls i av synken |
 
 Har du `bgg` och en BGG-token (se nedan) räcker det med `name`, `type` och `bgg`. Resten fylls i automatiskt.
@@ -67,7 +66,7 @@ Workflowen
 - committar `games.json` om något ändrats,
 - körs dessutom automatiskt den första varje månad.
 
-Namn, typ, anmärkningar och `forSale` ändras aldrig av synken. Kontrollera gärna att id:n som hittats automatiskt stämmer (tryck *BGG ↗* på spelet).
+Namn, typ och anmärkningar ändras aldrig av synken. Kontrollera gärna att id:n som hittats automatiskt stämmer (tryck *BGG ↗* på spelet).
 
 Köra lokalt: `BGG_TOKEN=… node scripts/bgg-sync.mjs`
 
