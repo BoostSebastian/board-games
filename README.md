@@ -2,7 +2,7 @@
 
 En webbapp (PWA) för brädspelssamlingen. Den fungerar i mobilen och på datorn, kan installeras på hemskärmen och fungerar offline.
 
-- **Två vyer**: lista eller **bokhylla** där spelen står som lådryggar. Det du filtrerar bort försvinner från hyllan.
+- **Två vyer**: lista eller **bokhylla** med riktiga lådryggar, fotograferade från hyllorna. Lådor som står med framsidan utåt visas så. Det du filtrerar bort försvinner från hyllan.
 - **Tryck på ett spel** för omslag, detaljer och länk till BoardGameGeek
 - **Filter** på antal spelare, vikt (1 lätt – 5 tung), speltid, kategori och **spelläge** (kooperativt eller mot varandra)
 - **Bäst med**: visa bara spel som BGG-communityn tycker är bäst med valt antal spelare
@@ -47,6 +47,7 @@ All data finns i [`games.json`](games.json). Lägg till ett spel direkt i GitHub
 | `coop` | `true` om spelet är kooperativt (valfritt, sätts även av synken) |
 | `forSale` | `true` om spelet ska säljas (valfritt) |
 | `image`, `color` | Omslagsbild i `images/` och ryggfärg. Fylls i av synken |
+| `spine`, `spineRatio`, `spineFace` | Foto av lådryggen i `images/spines/`, dess bredd/höjd och `front` om lådan står med framsidan utåt |
 
 Har du `bgg` och en BGG-token (se nedan) räcker det med `name`, `type` och `bgg`. Resten fylls i automatiskt.
 
@@ -92,6 +93,7 @@ och öppna <http://localhost:8000>.
 | `scripts/bgg-sync.mjs` | Hämtar data från BGG:s XML API2 |
 | `scripts/bgg-images.py` | Laddar ner omslag till `images/` och räknar fram ryggfärg |
 | `images/` | Omslagsbilder, en per BGG-id |
+| `images/spines/` | Lådryggar beskurna ur hyllfoton |
 | `.github/workflows/bgg-sync.yml` | Kör synken manuellt eller varje månad |
 | `sw.js` | Service worker för offlinestöd |
 | `manifest.webmanifest`, `icon*` | Gör appen installerbar |
