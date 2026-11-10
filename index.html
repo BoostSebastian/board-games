@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Spelhyllan</title>
+  <meta name="description" content="Brädspelssamlingen med filter på antal spelare, vikt och speltid.">
+  <meta name="theme-color" content="#9a4416">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Spelhyllan">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <h1>Spelhyllan</h1>
+    <p class="sub" id="sub">Laddar…</p>
+  </header>
+
+  <div class="search">
+    <div class="row">
+      <input id="q" type="search" placeholder="Sök spel…" autocomplete="off" aria-label="Sök spel">
+      <button class="btn" id="rnd" type="button">🎲 Slumpa</button>
+    </div>
+  </div>
+
+  <section class="filters" aria-label="Filter">
+    <div class="lbl">Antal spelare</div>
+    <div class="chips" id="pl"></div>
+    <label class="tog"><input type="checkbox" id="bestOnly"> Bara spel som är <b>bäst</b> med valt antal</label>
+    <div class="lbl">Vikt</div>
+    <div class="chips" id="wt"></div>
+    <div class="lbl">Speltid</div>
+    <div class="chips" id="tm"></div>
+
+    <div class="more" id="more">
+      <div class="lbl">Kategori</div>
+      <div class="chips wrap" id="cat"></div>
+      <label class="tog"><input type="checkbox" id="exp"> Visa expansioner</label>
+      <label class="tog"><input type="checkbox" id="sale"> Visa spel som ska säljas</label>
+      <div class="grid2">
+        <button class="btn ghost" id="copy" type="button">Kopiera som CSV</button>
+        <button class="btn ghost" id="reset" type="button">Nollställ filter</button>
+      </div>
+    </div>
+
+    <div class="meta">
+      <span id="count"></span>
+      <span class="meta-r">
+        <select id="sort" aria-label="Sortering">
+          <option value="name">Namn</option>
+          <option value="weight">Lättast först</option>
+          <option value="-weight">Tyngst först</option>
+          <option value="time">Kortast först</option>
+          <option value="-time">Längst först</option>
+          <option value="-rating">Högst BGG-betyg</option>
+        </select>
+        <button class="c" id="mbtn" type="button">Fler filter</button>
+      </span>
+    </div>
+  </section>
+
+  <main id="list"></main>
+
+  <footer class="note">
+    Spelarantal, bästa antal, vikt (1 lätt – 5 tung) och speltid kommer från BoardGameGeek.
+    <span id="synced"></span> Tryck <b>BGG ↗</b> för att öppna spelet där.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
