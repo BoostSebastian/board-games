@@ -2380,6 +2380,18 @@
   "base": "Wingspan"
  },
  {
+  "name": "Wingspan: European Expansion",
+  "type": "expansion",
+  "base": "Wingspan",
+  "min": 1,
+  "max": 5,
+  "best": "2-3",
+  "weight": 2.5,
+  "time": 70,
+  "cat": "Strategi",
+  "year": 2019
+ },
+ {
   "name": "Wingspan: Oceania Expansion",
   "type": "expansion",
   "min": 1,
